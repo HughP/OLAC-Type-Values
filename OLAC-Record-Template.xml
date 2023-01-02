@@ -1,3 +1,5 @@
+<!-- XML Comments preceed the element or section they apply to. Comments created by Hugh Paterson III. Primitives include: QDC= Qualified Dublin Core, This is the concept that DCTerms was a namespace defined to create descriptors (adjectives or qualifiers) which narrow the scope of a DC Element. All entities in the DC1.1 namespace are elements. "Elements" as a term comes from an understanding of the DC entities expressed via XML, however these entities are more appropriately called properties. DCMES= Dublin Core Metadata Elements Set, which is the set of elements which are not qualifiers. Following the DCMI usage board's choices to freeze the 1.1 namespace additional "Elements" were needed which were not qualifiers. These were added to the DCTerms namespace. Therefore the DCTerms namespace contains both some elements and all the qualifiers. In the ensuing development of the Dublin Core Metadata Set (both the 1.1 and DCTerms namespaces), another concept emerged. That is, is the value of an element is a literal or a non-literal. Non-literals are pointers to other things, whereas literals point no further and are therefore the thing. Most DCTerms are defined as requiring non-literals. All DC 1.1 elements are defined as being able to take both literal or non-literal values, though this doesn't make sense in some cases. For example, dc:date doesn't makes sense as a non-literal unless one accepts as date something like "the hundred and twenty years war" and then defines that text string in another namespace, which is not the OLAC use-case (though in archeology this may be more common practice where time is conceptually periods rather than years). A practice of using epoc labels as dates mitigates against a cataloging best practice of defining dates in specific formats. It is better in these cases to say that something is "date unknown" and has a coverage definition of the label of the epoc. Considering the data value typing differences between qualifiers in the DCTerms namespace and the elements of the 1.1 namespace, a crucial distinction between the uses of the namespaces emerges. Namely, use pointers with the DCTerms namespace. -->
+
 <?xml version="1.0"?>
 <!-- OAI-PMH records are supposed to have three sections these OLAC generated records only have two sections. This is a problem which needs fixed. The missing section is the OAI provonance section. -->
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
@@ -341,6 +343,9 @@
 
   </olac:olac>
       </metadata>
+	    <about>
+		    <!-- This is where OAI sticks Record Provonance. See: https://www.openarchives.org/OAI/2.0/guidelines-provenance.htm-->
+	    </about>    
     </record>
   </GetRecord>
 </OAI-PMH>
