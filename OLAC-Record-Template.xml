@@ -326,7 +326,7 @@
 	<!-- ### Different audiences may have different access rights. Is audience acually a union or a -->
 	<dcterms:audience>[…#Non-Literal]</dcterms:audience>
 
-	<!-- ### Mediator was originally considered a required component for describing learning resources. However, for collections whic are not in open access situations, it seems duely applicable as the contact person for the access to the collection.-->
+	<!-- ### Mediator was originally considered a required component for describing learning resources. However, for collections which are not in open access situations, it seems duely applicable as the contact person for the access to the collection.-->
 	<dcterms:audience xsi:type="dcterms:mediator">[…#Non-Literal]</dcterms:audience>
 	<dcterms:audience xsi:type="dcterms:educationLevel">[…#Non-Literal]</dcterms:audience>
 
