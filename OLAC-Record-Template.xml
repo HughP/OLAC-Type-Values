@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<!-- OAI-PMH records are supposed to have three sections these OLAC generated records only have two sections. This is a problem which needs fixed. The missing section is the OAI provonance section. -->
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+
+  <responseDate>2022-12-12T18:36:02Z</responseDate>
+  <request verb="GetRecord" identifier="oai%3Acla.berkeley.edu%3A24-1117" metadataPrefix="olac">http://www.language-archives.org/cgi-bin/olaca3.pl</request>
+  <GetRecord>
+    <record>
+      <header>
+        <identifier>oai:cla.berkeley.edu:24-1117</identifier>
+        <datestamp>2018-06-02</datestamp>
+      </header>
+      <metadata>
+<!-- These xsd files are locally hosted and do not represent the current DCTerms or Current DC xsd files. Dublin Core's version also don't accuratly indicate the standards. The olac.xsd points to several other xsd files. The dublin core terms xsd offically pulls in the dc.xsd so this seems to be pulled in twice. I think this is becase the xmlns is declared for dc and a schemalocation must exsist for each xmlns declaration. -->
+<!-- There exists a significant question as to should additional namespaces be added to these declarations, or should terms be added within these name spaces. -->
+<olac:olac xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xsi:schemaLocation=" http://purl.org/dc/elements/1.1/ http://www.language-archives.org/OLAC/1.1/dc.xsd http://purl.org/dc/terms/ http://www.language-archives.org/OLAC/1.1/dcterms.xsd http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd ">
+	<!-- ### Literals ### Literals do not point to anything else -->
+	<!-- ### Non-Literals ### Non-Literals do point to something else—Usually take the format of a link. But in cases were the vocabualry or ontology is defined, then the text itself could be the link.-->
+	<!-- ### xml:lang  ### OLAC documentation says that xml:lang can be used, but infact it is not allowed via the validator. Additionally, some cases should no allow xml:lang. xml.lang is the only way to indicate the language or script of the metadata. It is also the only way in some cases to indicate that an element's value is literal or non-literial. xml:lang does not appear on elements which have a value which is a URI.-->
+
+	<!-- # Satatement of Responsibility #-->
+	<dc:title>[… #Literal]</dc:title>
+	<dcterms:title>[… #Literal]</dcterms:title>
+	<dc:title xml:lang="[...]">[… #Literal]</dc:title>
+	<dcterms:title xml:lang="[...]">[… #Literal]</dcterms:title>
+
+	<dcterms:alternative>[… #Literal]</dcterms:alternative>
+	<dcterms:alternative xml:lang="[...]">[… #Literal]</dcterms:alternative>
+	<dc:title xsi:type="dcterms:alternative" xml:lang="[...]">[… #Literal]</dc:title>
+
+
+	<!-- # Agents #-->
+	<!-- ### identifier attributes ### There has been a long time acknowledgment that DC does not have the capability of identifiying agents unless a URI is used. In the cases that a URI is used then there is no sure way to declare the human redable name. OLAC AP should consider adding an attribute to contributors which includes a URI to authority records such as the LCNAF, ORCID, or VIAF. The problem if OLAC does this is that there is no second xsi:type possible after the role is declared. The technical solution is to use an XML based delivery MODS offeres a model on how to do this. But, the problem is that most OAI templets are not set up to deliver MODS or deliver a MODS package within a DC record. One way around this would be to create multiple statements per contributor. One could create one with a role statement and then a second one with an identifier. Then recieving systems would need to consolidate the information for display purposes. e.g. [agent orcid=234]hugh[/] [agent role=author]hugh[/]-->
+	<dc:contributor>[…#Literal]</dc:contributor>
+	<dcterms:contributor>[…#Non-Literal]</dcterms:contributor>
+	<dc:contributor xsi:type="olac:role" olac:code="[...]" xml:lang="[...]">[…#Literal]</dc:contributor>
+	<dcterms:contributor xsi:type="olac:role" olac:code="[...]" xml:lang="[...]">[…#Non-Literal]</dcterms:contributor>
+<!-- ### MARCREL  ### OLAC documentation says that any MARCREL value can be used but the problem is that the OLAC validator does not actually check these values.-->
+	<dc:contributor xsi:type="marcrel:role" marcrel:code="[...]" xml:lang="[...]">[…#Literal]</dc:contributor>
+	<dcterms:contributor xsi:type="marcrel:role" marcrel:code="[...]" xml:lang="[...]">[…#Non-Literal]</dcterms:contributor>
+
+	<!-- ### DO NOT USE ### dc:creator dcterms:creator is valid but DCMI suggests not using it and the OALC AP follows this advice. Records with these attributes should be flagged. -->
+	<dc:creator>[...#Literal]</dc:creator>
+	<dcterms:creator>[...#Non-Literal]</dcterms:creator>
+	<dc:creator xsi:type="[...]" xml:lang="[...]">[…#Literal]</dc:creator>
+	<dcterms:creator xsi:type="[...]" xml:lang="[...]">[…#Non-Literal]</dcterms:creator>
+
+	<dc:publisher>[…#Literal]</dc:publisher>
+	<dcterms:publisher>[…#Non-Literal]</dcterms:publisher>
+	<dc:publisher xml:lang="[...]">[…#Literal]</dc:publisher>
+	<dcterms:publisher xml:lang="[...]">[…#Non-Literal]</dcterms:publisher>
+
+	<!-- # Is-ness #-->
+	<!-- ### Type is the only element for genre terms. ### the OLAC AP should consider adding either the MARCGT or CSL/Zotero vocabularies for genre in addition to existing genre terms -->
+	<!-- ### DCMIType is only about the mode of issuance not about genre### -->
+	<!-- ### dc:type without an xml:lang with a literal value should be discouraged or eleminated. This can be done by checking for xml:lang's existance without a xsi:type element. ### -->
+	<dc:type>[…#Literal]</dc:type>
+
+	<dcterms:type>[…#Non-Literal]</dcterms:type>
+	<dc:type xml:lang="[...]">[…#Literal]</dc:type>
+	<!-- ### dcterms:type with an xml:lang element exists when the non-literal is also natural language and not specified via an xsi:type attribute. This should be avoided as controled vocabularies should be used. ### -->
+	<dcterms:type xml:lang="[...]">[…#Non-Literal]</dcterms:type>
+	<!-- ### The following type examples can be limited via regex or declared XSD values.  -->
+	<!-- ### The absence of a DCMIType value should imapct record quality. However, currently is not accounted for in quality assesments. The OLAC AP should make this a required element.  -->
+	<dc:type xsi:type="dcmitype:DCMIType">[…#Literal]</dc:type>
+	<dcterms:type xsi:type="dcmitype:DCMIType">[…#Non-Literal]</dcterms:type>
+
+	<!-- ### The following can be limited via regex or declared XSD values.  -->
+         <dcterms:type xsi:type="olac:linguistic-type" olac:code="[...]"/>
+         <dc:type xsi:type="olac:linguistic-type" olac:code="[...]">[...#Literal (text)]</dc:type >
+         <dcterms:type xsi:type="olac:linguistic-type" olac:code="[...]">[...#Non-Literal (URI)]</dcterms:type >
+	<!-- ### Does Not Make Sense ### dcterms:type with an xsi:type declaration in the OLAC space is possible, but does not make sense because no non-literal is provided (item [1] above). The aggregator sort of turns all of these into non-literals anyway by nature of its use. In fact when vocabularies are used in dublin core, the stewards of dublin core actually consider these to be non-literals. Here it is the case that the non-literal is not provided as a value but rather as an attribute.  Some further thinking on this for the OLAC AP ought to be conducted because is their a difference between the 'dc:type xsi:type="olac:linguistic-type" ' and the ' dcterms:type xsi:type="olac:linguistic-type" ' and maybe it should be the dcterms:type which is prefered in these situations rather than dc. It seems to me that what ought to be avoided is the following, although it is valid and legal-->
+          <dc:type xsi:type="olac:linguistic-type" olac:code="[...]"/>
+
+         <dcterms:type xsi:type="olac:discourse-type" olac:code="[...]"/>
+         <dc:type xsi:type="olac:discourse-type" olac:code="[...]">[...#Literal (text)]</dc:type >
+         <dcterms:type xsi:type="olac:discourse-type" olac:code="[...]">[...#Non-Literal (URI)]</dcterms:type >
+	<!-- ### Does Not Make Sense ### dcterms:type with an xsi:type declaration in the OLAC space is possible, but does not make sense because no non-literal is provided (item [1] above). The aggregator sort of turns all of these into non-literals anyway by nature of its use. In fact when vocabularies are used in dublin core, the stewards of dublin core actually consider these to be non-literals. Here it is the case that the non-literal is not provided as a value but rather as an attribute.  Some further thinking on this for the OLAC AP ought to be conducted because is their a difference between the 'dc:type xsi:type="olac:linguistic-type" ' and the ' dcterms:type xsi:type="olac:linguistic-type" ' and maybe it should be the dcterms:type which is prefered in these situations rather than dc. It seems to me that what ought to be avoided is the following, although it is valid and legal-->
+         <dc:type xsi:type="olac:discourse-type" olac:code="[...]"/>
+
+         <!-- ### dc:format can be used with both literals or non-literals but for the purposes of the OALC-AP this should be constrained to just literals. If these are literals then it should also have a xml:lang tag as well. -->
+         <dc:format  xml:lang="[...]">[…#Literal]</dc:format>
+<!-- ### The only case which should have a non xsi:type="dcterms:IMT" is for wav files. The OLAC AP should specify what to use for wav files.  -->
+         <dcterms:format>[...#Non-Literal]</dcterms:format>
+<!-- ### These can be limited via regex or enumbered XSD values.  It seems to me that dcterms cannot modify something in the DCTerms name space. So if an IMT is indicated then this value must be in the DC namespace. -->
+         <dc:format xsi:type="dcterms:IMT">[...#Non-Literal]</dc:format>
+
+
+<!-- ### Extent can be validated. Extent with a DCMIType of (sound or movingImage) and a value for format OR a dcmitype of Event without a format could and should be validated against the xsd duration.  http://www.datypic.com/sc/xsd/t-xsd_duration.html -->
+<!-- ### Extent on other dcmitypes should be evaluated for the OLAC AP. For example, should a journal article which is a PDF have an extent of '28 pages' or should it have an extent of '100—127'? This leaves room for a units vocabulary as an xsi:type declaration as part of the Application Profile. The OLAC AP should declare which units are prefered for various kinds of resources and what the text string is for those units this means that no lanugage tag is needed because "pages" will be the unit name, rather than a concept related to a book. There is no need for "Seiten" or "paginas". -->
+	<dcterms:extent>[…]</dcterms:extent>
+
+         <!-- ### medium can only get uses if there is a physical carrier!  -->
+         <!-- ### If OLAC opened up the namespace to include RDA and MARC then dcterms:medium could use xsi:type and declare the use of RDA or MARC vocabularies for formats. Having too many vocabulary options within the application profile without guidance is a problem. Something clear guidance should be given to show which vocabularies are prefered in specific settings. Even in these RDA or MARC hypothetical examples the values would be non-literals. Currently these same vocabulary values can be used by inserting the full URI for the term. For examples see: https://www.loc.gov/standards/valuelist/rdacarrier.html -->
+	<dcterms:medium>[…#Non-Literals]</dcterms:medium>
+
+         <!-- ### These can be limited or validated via regex or enumbered XSD values based in part on the IANA database.  -->
+         <!-- ### All of the vocaularies are represented in the Dublin Core documentation, but are not listed in the official xsd files.  -->
+         <!-- My persective is that all "qualified" instances of language are using non-literals. The only case where dc:language is a literal is when it is not a code value. In these cases since it is a literal it should also have an xml:lang tag to state which natural language the term is in. Use the dcterms namespace for URIs which are not in the vocabualries mentioned within the dcterms namespace. For Example, Glottolog URIs or MARC language tag URIs. -->
+	<dc:language xml:lang="[...]">[… #Literal]</dc:language>
+	<dcterms:language>[… #Non-Literal]</dcterms:language>
+	<dc:language xsi:type="dcterms:ISO639-2">[…]</dc:language>
+	<dc:language xsi:type="dcterms:ISO639-3">[…]</dc:language>
+	<dc:language xsi:type="dcterms:RFC5646">[…]</dc:language>
+	<dc:language xsi:type="dcterms:RFC4646">[…]</dc:language>
+	<dc:language xsi:type="dcterms:RFC3066">[…]</dc:language>
+	<dc:language xsi:type="dcterms:RFC1766">[…]</dc:language>
+	<dc:language xsi:type="olac:language">[…]</dc:language>
+	<dc:language xsi:type="olac:language" olac:code="[...]"/>
+
+	<!-- # Administrative #-->
+
+	<!-- ### Identifier or type The OLAC AP should add RDA curies to records to identifiy them as Works, Expressions, Manifestations, or Item Records. See values here: http://www.rdaregistry.info/Elements/c/ This allivates the need to make expressions or work based records a DCMIType="collection" value. -->
+	<!-- ### It has long been acknowledged that some specific identifiers schemes exist. https://www.dublincore.org/groups/citation/citids/  OLAC AP should be opinionated about how to encourage the use of URNS and the rewards for using these.-->
+	<dc:identifier>[…#Literal]</dc:identifier>
+	<dcterms:identifier>[…#Literal]</dcterms:identifier>
+	<dc:identifier xsi:type="dcterms:URI">[...#Literal]</dc:identifier>
+	<!-- qdc patterns make the following not allowed due to two instances of dcterms; but this is exactly what is done in the DC XML guidelines: https://www.dublincore.org/specifications/dublin-core/dc-xml-guidelines/ -->
+	<dcterms:identifier xsi:type="dcterms:URI">[...#Literal]</dcterms:identifier>
+
+	<!-- ### bibliographicCitation needs some paramaters and explination. There are several formats which can be used as is documented in the Dublin Core guidelines. https://www.dublincore.org/specifications/dublin-core/dc-citation-guidelines/  http://www.ariadne.ac.uk/issue/27/metadata/ My recomendation is Chicago 16th style and a Zotero Generated OpenURL syntax. However, the OLAC AP needs to specifically address these issues. -->
+	<!-- bibliographicCitatoin can be used to refine dc:identifier. In these situations it only makes sense to refine as a literal. It violates the qdc patterns to have dcterms:identifier xsi:type="dcterms:bibliographicCitation" though counter examples exist in the guidelines...-->
+	<!-- ### Examples for bibliographic citation### <dcterms:bibliographicCitation>'&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=LRMoo%2C%20a%20high-level%20model%20in%20an%20object-oriented%20framework&amp;rft.aufirst=Pat&amp;rft.aulast=RIva&amp;rft.au=Pat%20RIva&amp;rft.au=Maja%20%C5%BDumer&amp;rft.au=Trond%20Aalberg&amp;rft.language=en'</dcterms:bibliographicCitation> <dcterms:bibliographicCitation xml:lang="en-US">Hawkins, Les, Steve Shadle, and Patricia French. 2021. “Cataloging Electronic Serials.” In Experimentation and Collaboration, by Charlene N. Simser and Michael A. Somers, 1st ed., 385–89. New York: Routledge. doi:10.4324/9781003249276-64.</dcterms:bibliographicCitation> -->
+	<dc:identifier xsi:type="dcterms:bibliographicCitation">[...#Literal]</dc:identifier>
+	<dcterms:bibliographicCitation xml:lang="[...]">[…#Literal]</dcterms:bibliographicCitation>
+	<dcterms:bibliographicCitation>[…#Literal]</dcterms:bibliographicCitation>
+
+
+	<!-- # About-ness #-->
+	<!-- The OLAC Application profile needs to overtly state which they want and what will happen if each is provided. One way to force meaning is to use the xsi:type declaration to make the destinction, forcing the dcterms into the non-literal space. Technically dcterms description, abstract, and table of contents are all have values of literal or non-literal. This means that if used in the dcterms namespace they could have non-literal, while if they are wrapped in the dc namespace they would be literal. If one has a non-literal value which points to something else such as a URI/URL then one doesn't need an xml:lang attribute because it doesn't makes sense (the only time it might make sense is if the URL is an internationalized URL but these still have a latin encoding). The code below is opinionated. The OLAC application profile needs to define the data strucures within the tableOfContents element. -->
+	<dc:description xml:lang="[...]">[…#Literal]</dc:description>
+	<dcterms:description>[…#Non-Literal]</dcterms:description>
+
+	<dc:description xsi:type="dcterms:abstract" xml:lang="[...]">[…#Literal]</dc:description>
+	<dcterms:abstract>[…#Non-Literal]</dcterms:abstract>
+
+	<dc:description xsi:type="dcterms:tableOfContents" xml:lang="[...]">[…#Literal]</dc:description>
+	<dcterms:tableOfContents>[…#Non-Literal]</dcterms:tableOfContents>
+
+	<!-- ### DO NOT USE ### They are valid but OLAC rules prevent it. -->
+	<dcterms:abstract xml:lang="[...]">[…#Non-Literal]</dcterms:abstract>
+	<dcterms:abstract xml:lang="[...]">[…#Literal]</dcterms:abstract>
+	<dcterms:tableOfContents xml:lang="[...]">[…#Non-Literal]</dcterms:tableOfContents>
+
+	<!-- ### Generic Subject Terms ### OLAC could identify specific vocabualries for use, for instace GOLD. -->
+	<!-- Is the multiple listing a union or an intersection? -->
+	<dc:subject xml:lang="[...]">[…#Literal]</dc:subject>
+	<dcterms:subject>[…#Non-Literal]</dcterms:subject>
+	<!-- ### Library of Congress Subject Headdings can be expressed in several ways. However, some information professionals hold that only one specific sub-class of the LCSH terms may be used. ### OLAC could identify these terms and provide an XSD of these therms. Following the qdc patterns the following example is not allowed: 	<dcterms:subject xsi:type="dcterms:LCSH" xml:lang="[...]">[…#Non-Literal]</dcterms:subject>; though counter examples exist in the DC XML guidelines. This is because it is a dcterms refining a dcterms item. There is a question though on if this is strictly possible. -->
+	<dc:subject xsi:type="dcterms:LCSH" xml:lang="[...]">[…#Non-Literal]</dc:subject>
+	<!-- Some of these systems are numbers matched to terms. When a number is used then no xml:lang is needed -->
+	<dc:subject xsi:type="dcterms:MESH" xml:lang="[...]">[…#Non-Literal]</dc:subject>
+	<dc:subject xsi:type="dcterms:DDC" xml:lang="[...]">[…#Non-Literal]</dc:subject>
+	<dc:subject xsi:type="dcterms:LCC" xml:lang="[...]">[…#Non-Literal]</dc:subject>
+	<dc:subject xsi:type="dcterms:UDC" xml:lang="[...]">[…#Non-Literal]</dc:subject>
+	<dc:subject xsi:type="dcterms:LCC" xml:lang="[...]">[…#Non-Literal]</dc:subject>
+	<dc:subject xsi:type="dcterms:NLM" xml:lang="[...]">[…#Non-Literal]</dc:subject>
+
+	<!-- ### Non-Literal Terms ### Non-literals may be URI's and therefore not language, they may be numeric and therefore also not languge, they may be official terms and therefore language. When they are language then they should have xml:lang, when no language content then they should not have xml:lang. Only when the term is in a language which is not normally written in latin script would there ever be a need for a script tag; mostly always latin sript with these vocabularies. The following do not conform to the qdc design pattern because they are in the dcterms namespace and are also refined by the dcterms namespace; though counter examples exist in the DC XML Guide: https://www.dublincore.org/specifications/dublin-core/dc-xml-guidelines/. If a URI type non-literal is used then URI sniffing would be needed to determine which kind of non-literal is used.-->
+	<dcterms:subject xsi:type="dcterms:MESH" xml:lang="[...]">[…#Non-Literal]</dcterms:subject>
+	<dcterms:subject xsi:type="dcterms:MESH">[…#Non-Literal]</dcterms:subject>
+	<dcterms:subject xsi:type="dcterms:DDC" xml:lang="[...]">[…#Non-Literal]</dcterms:subject>
+	<dcterms:subject xsi:type="dcterms:DDC">[…#Non-Literal]</dcterms:subject>
+	<dcterms:subject xsi:type="dcterms:LCC" xml:lang="[...]">[…#Non-Literal]</dcterms:subject>
+	<dcterms:subject xsi:type="dcterms:LCC">[…#Non-Literal]</dcterms:subject>
+	<dcterms:subject xsi:type="dcterms:UDC" xml:lang="[...]">[…#Non-Literal]</dcterms:subject>
+	<dcterms:subject xsi:type="dcterms:UDC">[…#Non-Literal]</dcterms:subject>
+	<dcterms:subject xsi:type="dcterms:LCC" xml:lang="[...]">[…#Non-Literal]</dcterms:subject>
+	<dcterms:subject xsi:type="dcterms:LCC">[…#Non-Literal]</dcterms:subject>
+	<!-- NLM does not appear in the list of items in the DCterms.xsd, but it is in the documentation. Neither do all of the language vocabularies. -->
+	<!-- There is a dead link on the Dublin Core page.... But this page is the official DCTerms page...  The link is the the NLM resources. Current link is http://wwwcf.nlm.nih.gov/class/  Back in 2020 this changed as seen in the internet archive: http://web.archive.org/web/20200319165100/https://www.nlm.nih.gov/class/index.html Current link appears to be: https://classification.nlm.nih.gov/ But I am not sure if '/class' which appears in the URL actually was to a specific section. I suspect it was and the links I provide are not to that specific section only the general website. This leads to confusion about how to apply NLM based subjects to DC elements. That is, what is expected codes like: "WO 101" or URIs like: "https://classification.nlm.nih.gov/schedules/WO#WO%20101"  The URIs do not seem to be stable given that the website changed. Therefore, it seems that codes are the preference. The definition is also confusing. Unlike LCSH and MESH which referer to "concepts" the definition of NLM refers to "resources". I don't see any clear typology of resources on the NLM website. -->
+	<dcterms:subject xsi:type="dcterms:NLM" xml:lang="[...]">[…#Non-Literal]</dcterms:subject>
+	<dcterms:subject xsi:type="dcterms:NLM">[…#Non-Literal]</dcterms:subject>
+
+	<!-- ### For OLAC refinements, these are all non-literals. The refinement is outside of the dcterms namespace and as such they could be valid in the dc or the dcterms namespaces. However there are at least four ways to indicate the data. Not all of them with the same infrences. First there is the attribute only, second there is the attribute with the text in the value field, third there is as a non-literal with a URI to the indicated term, and this may be with the xsi attribute or with out. The Dublin Core XML guidelines condem the use of syntax like:           <dc:subject xsi:type="olac:language" olac:code="[...]"/> -->
+          <dc:subject xsi:type="olac:language" olac:code="[...]"/>
+         <dc:subject xsi:type="olac:language" olac:code="[...]" xml:lang="[...]">[...#Non-Literal]</dc:type >
+          <dc:subject xsi:type="olac:discourse-type" olac:code="[...]"/>
+         <dc:subject xsi:type="olac:discourse-type" olac:code="[...]">[...#Non-Literal]</dc:type >
+          <dc:subject xsi:type="olac:linguistic-field" olac:code="[...]"/>
+         <dc:subject xsi:type="olac:linguistic-field" olac:code="[...]">[...#Non-Literal]</dc:type >
+
+	<!-- Coverage is interesting because I am not sure how to provide a literal in the temporal or spatial refinement. previously I have said that a dc:ELEMENT refinement with a dcterms:QUALIFIER gives the reading of a non-literal ...-->
+	<dcterms:spatial>[…#Non-Literal]</dcterms:spatial>
+	<dcterms:temporal xml:lang="[...]">[…Natural Language #Non-Literal in an undefined namespace - Rare]</dcterms:temporal>
+	<dcterms:spatial xml:lang="[...]">[… Natural Language #Non-Literal in an undefined namespace - Rare]</dcterms:spatial>
+	<!-- The following is problematic because it is one part of dcterms refineing another part of the same namespace. Therefore it should likely rewritten to the following example.-->
+	<dcterms:spatial xsi:type="dcterms:ISO3166">[...]</dcterms:spatial>
+	<!-- ISO3166 can only apply to one sub-variety of coverage so we can infer that this must be of that type.-->
+	<dc:coverage xsi:type="dcterms:ISO3166">[…#Literal]</dc:coverage>
+
+
+	<dc:coverage xml:lang="[...]">[…#Literal]</dc:coverage>
+	<!-- Example -->
+	<dc:coverage xml:lang="en-US">United States during the civil war</dc:coverage>
+
+	<dc:coverage xsi:type="dcterms:spatial" xml:lang="[...]">[…]</dc:coverage>
+	<!-- Example: This is a prefered heading, even though the vocabulary is not defined. The OLAC AP could define which vocab exists within this undefined space.-->
+	<dcterms:spatial xml:lang="en-US">Mars (Planet)</dcterms: spatial>
+
+	<dc:coverage xsi:type="dcterms:temporal" xml:lang="[...]">[…]</dc:coverage>
+	<!-- Example -->
+	<dcterms:temporal xml:lang="en-US">19th century</dcterms:temporal>
+
+
+	<dcterms:spatial>...#Non-Literal</dcterms:spatial>
+	<dcterms:temporal>...#Non-Literal</dcterms:temporal>
+<dc:coverage xml:lang="en-US">United States during the civil war</dc:coverage>
+<dc:coverage xsi:type="dcterms:spatial">Mars (Planet)</dc:coverage>
+<dc:coverage xsi:type="dcterms:temporal">19th century</dc:coverage>
+<dc:coverage xsi:type="dcterms:ISO3166">CK</dc:coverage>
+<dc:coverage xsi:type="dcterms:Box">northlimit=-18.826; southlimit=-21.944; westlimit=-159.825; eastlimit=-157.312</dc:coverage>
+<dc:coverage xsi:type="dcterms:Point">east=v1; north=v2; elevation=v3; units=v4; zunits=v5; projection=v6; name=v7</dc:coverage>
+<dc:coverage xsi:type="dcterms:TGN">Guadalcanal (island)</dc:coverage>
+<dc:coverage xsi:type="dcterms:W3CDTF">2001-09-11</dc:coverage>
+<dc:coverage xsi:type="dcterms:Period">start=1900; end=2006;</dc:coverage>
+
+<!-- The following do not follow the qdc patterns and should be excluded due to two references to the dcterms namespace -->
+<dcterms:spatial xsi:type="dcterms:ISO3166">CK</dcterms:spatial>
+<dcterms:spatial xsi:type="dcterms:Box">northlimit=-18.826; southlimit=-21.944; westlimit=-159.825; eastlimit=-157.312</dcterms:spatial>
+<dcterms:spatial xsi:type="dcterms:Point">east=v1; north=v2; elevation=v3; units=v4; zunits=v5; projection=v6; name=v7</dcterms:spatial>
+<dcterms:spatial xsi:type="dcterms:TGN">Guadalcanal (island)</dcterms:spatial>
+<dcterms:temporal xsi:type="dcterms:Period">start=1900; end=2006;</dcterms:temporal>
+<dcterms:temporal xsi:type="dcterms:W3CDTF">2001-09-11</dcterms:temporal>
+
+
+	<!-- ### Date Templates: There are quite a few date type elements. It is best to exemplify these rather than just describe them. Dates can come in three varieties. Unqualified or specified for date strucutre. Specfied for a period of time, or specified via W3CDTF format. The block below gives the general summary. Note however, as exemplified in the example block, that dc:date can be modified by a linle xsi:type element and this may be one of the more refined terms for date in the dcterms namespace. -->
+	<dc:date>[…]</dc:date>
+	<dc:date xsi:type="[...]">[...]</dc:date>
+	<dc:date xsi:type="dcterms:W3CDTF">[...]</dc:date>
+	<dc:date xsi:type="dcterms:Period">[...]</dc:date>
+	<!-- Other Date elements, which can each take a period or W3CDTF syntax.  -->
+	<dcterms:created xsi:type="[...]">[…]</dcterms:created>
+	<dcterms:issued xsi:type="[...]">[…]</dcterms:cissued>
+	<dcterms:available xsi:type="[...]">[…]</dcterms:available>
+	<dcterms:modified xsi:type="[...]">[…]</dcterms:modified>
+	<dcterms:valid xsi:type="[...]">[…]</dcterms:valid>
+	<dcterms:dateCopyrighted xsi:type="[...]">[…]</dcterms:dateCopyrighted>
+	<dcterms:dateSubmitted xsi:type="[...]">[…]</dcterms:dateSubmitted>
+	<dcterms:dateAccepted xsi:type="[...]">[…]</dcterms:dateAccepted>
+
+	<!-- ### Examples for Dates.  -->
+	<!-- ### Ranking Dates for Metadata quality. -1 point for no date. 0 points for bare <dc:date> +1 point for dcterms:xxx type date. +2 points for dcterms:W3CDTF or dcterms:Period qualified dates. -2 points for non-validating date formats in a dcterms:W3CDTF or dcterms:Period qualified date field.  -->
+	<dc:date>2012-11-11</dc:date>
+	<dc:date xsi:type="dcterms:W3CDTF">2012-11-11</dc:date>
+	<dc:date xsi:type="dcterms:created">2012-11-11</dc:date>
+	<dcterms:created xsi:type="dcterms:W3CDTF">2012-11-11</dcterms:created>
+	<dcterms:created xsi:type="dcterms:Period">start=1962; end=2006;</dcterms:created>
+	<dc:date xsi:type="dcterms:valid">2012-11-11</dc:date>
+	<dcterms:valid xsi:type="dcterms:W3CDTF">2012-11-11</dcterms:valid>
+	<dcterms:valid xsi:type="dcterms:Period">start=1962; end=2006;</dcterms:valid>
+	<dc:date xsi:type="dcterms:available">2012-11-11</dc:date>
+	<dcterms:available xsi:type="dcterms:W3CDTF">2012-11-11</dcterms:available>
+	<dcterms:available xsi:type="dcterms:Period">start=1962; end=2006;</dcterms:available>
+	<dc:date xsi:type="dcterms:issued">2012-11-11</dc:date>
+	<dcterms:issued xsi:type="dcterms:W3CDTF">2012-11-11</dcterms:issued>
+	<dcterms:issued xsi:type="dcterms:Period">start=1962; end=2006;</dcterms:issued>
+	<dc:date xsi:type="dcterms:modified">2012-11-11</dc:date>
+	<dcterms:modified xsi:type="dcterms:W3CDTF">2012-11-11</dcterms:modified>
+	<dcterms:modified xsi:type="dcterms:Period">start=1962; end=2006;</dcterms:modified>
+	<dc:date xsi:type="dcterms:dateSubmitted">2012-11-11</dc:date>
+	<dcterms:dateSubmitted xsi:type="dcterms:W3CDTF">2012-11-11</dcterms:dateSubmitted>
+	<dcterms:dateSubmitted xsi:type="dcterms:Period">start=1962; end=2006;</dcterms:dateSubmitted>
+	<dc:date xsi:type="dcterms:dateCopyrighted">2012-11-11</dc:date>
+	<dcterms:dateCopyrighted xsi:type="dcterms:W3CDTF">2012-11-11</dcterms:dateCopyrighted>
+	<dcterms:dateCopyrighted xsi:type="dcterms:Period">start=1962; end=2006;</dcterms:dateCopyrighted>
+	<dc:date xsi:type="dcterms:dateAccepted">2012-11-11</dc:date>
+	<dcterms:dateAccepted xsi:type="dcterms:W3CDTF">2012-11-11</dcterms:dateAccepted>
+	<dcterms:dateAccepted xsi:type="dcterms:Period">start=1962; end=2006;</dcterms:dateAccepted>
+
+	<!-- ### Relationships.  -->
+	<!-- ### Relationships need more definition in the OLAC-AP with regard to their values. There should be a cascading set of options. Using an OAI based ID, Using an data provider internal ID, using a third party based ID. For these to work OLAC would need to do some sniffing. The sniffing needs to be related to options outlined in the identifier section, e.g., the use of URNs, the use of doi, the use of ISSNs or ISBNs, etc. Generally, relations could be expressed in several ways: they could have a literal, which would be just text. In theory they could have KEV syntax. They could have a DOI and OLAC could fetch data and display it. They could have an OAI ID and olac could look it up within the database and display it. OLAC could locally look at a number of things via sniffing. Finally, relations could have an XML snippet describing the related item. The last option, the XML snipptet, is the least desireable as it requires another layer of interpreter within XML. -->
+	<!-- ### If OLAC AP adopts other namespaces, which is not endorsed by me, then one could use terms like `dcat:hasCurrentVersion` or `dcat:previousVersion` to create links between expressions of the same work, a.k.a. versions. DCAT https://www.w3.org/TR/vocab-dcat-3/ is interesting in that it is a close match to the space that OLAC data providers offer. It could with some wrangling be expressed in OAI terms but the big drawback is that it does not have the support of many products whereas Dublin Core does.-->
+	<!--### dc:relation is techincally able to do both literals and non-literals, but if dcterms is avaialble for non-uri-non-literals then why use dc:relation for the same thing?-->
+	<dc:relation>[…#Literal]</dc:relation>
+	<dc:relation xsi:type="dcterms:uri">[…]</dc:relation>
+	<dcterms:isPartOf>[…#Non-Literal]</dcterms:isPartOf>
+	<dcterms:isPartOf xsi:type="dcterms:uri">[…]</dcterms:isPartOf>
+	<dcterms:hasPart>[…]</dcterms:hasPart>
+	<dcterms:hasPartOf xsi:type="dcterms:uri">[…]</dcterms:hasPart>
+	<dcterms:isVersionOf>[…#Non-Literal]</dcterms:isVersionOf>
+	<dcterms:isVersionOf xsi:type="dcterms:uri">[…]</dcterms:isVersionOf>
+	<dcterms:hasVersion>[…#Non-Literal]</dcterms:hasVersion>
+	<dcterms:hasVersion xsi:type="dcterms:uri">[…]</dcterms:hasVersion>
+	<dcterms:isFormatOf>[…#Non-Literal]</dcterms:isFormatOf>
+	<dcterms:isFormatOf xsi:type="dcterms:uri">[…]</dcterms:isFormatOf>
+	<dcterms:hasFormat>[…#Non-Literal]</dcterms:hasFormat>
+	<dcterms:hasFormat xsi:type="dcterms:uri">[…]</dcterms:hasFormat>
+	<dcterms:replaces>[…#Non-Literal]</dcterms:replaces>
+	<dcterms:replaces xsi:type="dcterms:uri">[…]</dcterms:replaces>
+	<dcterms:isReplacedBy>[…#Non-Literal]</dcterms:isReplacedBy>
+	<dcterms:isReplacedBy xsi:type="dcterms:uri">[…]</dcterms:isReplacedBy>
+	<dcterms:requires>[…#Non-Literal]</dcterms:requires>
+	<dcterms:requires xsi:type="dcterms:uri">[…]</dcterms:requires>
+	<dcterms:isRequiredBy>[…#Non-Literal]</dcterms:isRequiredBy>
+	<dcterms:isRequiredBy xsi:type="dcterms:uri">[…]</dcterms:isRequiredBy>
+	<dcterms:references>[…#Non-Literal]</dcterms:references>
+	<dcterms:references xsi:type="dcterms:uri">[…]</dcterms:references>
+	<dcterms:isReferencedBy>[…#Non-Literal]</dcterms:isReferencedBy>
+	<dcterms:isReferencedBy xsi:type="dcterms:uri">[…]</dcterms:isReferencedBy>
+
+	<dcterms:conformsTo>[…#Non-Literal]</dcterms:conformsTo>
+	<dcterms:conformsTo xsi:type="dcterms:uri">[…]</dcterms:conformsTo>
+
+	<!-- ### Rights.  -->
+	<!-- ### Rights statements need to be addressed in several ways. RightsHolder is not related to a single   -->
+	<!-- ### Why can't dcterms:license be modified with dcterms:dateValid if the license expires at some point?-->
+	<!-- ### If dateCopyright appears in the record, then copyrigh should be listed among the rights, and vice versa-->
+	<dc:rights>[…]</dc:rights>
+	<dc:rights xml:lang="[...]">[…]</dc:rights>
+	<dc:rights xsi:type="dcterms:uri">[…]</dc:rights>
+	<dcterms:license>[…]</dcterms:license>
+	<dcterms:license xml:lang="[...]">[…]</dcterms:license>
+	<dcterms:license xsi:type="dcterms:uri">[…]</dcterms:license>
+	<dcterms:rightsHolder>[…#Literal]</dcterms:rightsHolder>
+	<dcterms:rightsHolder>[…#Non-Literal]</dcterms:rightsHolder>
+	<dcterms:rightsHolder xml:lang="[...]">[…#Non-Literal]</dcterms:rightsHolder>
+
+	<!-- Is the multiple listing a union or an intersection? -->
+	<dcterms:audience>[…#Non-Literal]</dcterms:audience>
+
+	<!-- ### Why can't dcterms:accessRights be modified with dcterms:dateValid if the embargo is set expire at some point?-->
+	<dcterms:accessRights>[…]</dcterms:accessRights>
+	<!-- ### Different audiences may have different access rights. Is audience acually a union or a -->
+	<dcterms:audience>[…#Non-Literal]</dcterms:audience>
+
+	<!-- ### Mediator was originally considered a required component for describing learning resources. However, for collections whic are not in open access situations, it seems duely applicable as the contact person for the access to the collection.-->
+	<dcterms:audience xsi:type="dcterms:mediator">[…#Non-Literal]</dcterms:audience>
+	<dcterms:audience xsi:type="dcterms:educationLevel">[…#Non-Literal]</dcterms:audience>
+
+	<dcterms:provenance>[…]</provenance>
+	<dcterms:source>[…#Non-Literal]</dc:source>
+	<dc:source xsi:type="dcterms:uri">[…]</dc:source>
+
+	<dcterms:instructionalMethod>[…#Non-Literal]</dcterms:instructionalMethod>
+
+	<!-- ### The following can only be used with collection level records.-->
+	<dcterms:accrualMethod>[…#Non-Literal]</dcterms:accrualMethod>
+	<dcterms:accrualPeriodicity>[…#Non-Literal]</dcterms:accrualPeriodicity>
+	<dcterms:accrualPolicy>[…#Non-Literal]</dcterms:accrualPolicy>
+
+  </olac:olac>
+      </metadata>
+    </record>
+  </GetRecord>
+</OAI-PMH>
