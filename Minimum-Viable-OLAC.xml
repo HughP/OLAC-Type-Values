@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Repository xmlns="http://www.openarchives.org/OAI/2.0/static-repository" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/static-repository http://www.language-archives.org/OLAC/1.1/static-repository.xsd http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+<!-- https://dublincore.org/schemas/xmls/qdc/2006/01/06/dcterms.xsd https://dublincore.org/schemas/xmls/qdc/2006/01/06/dc.xsd -->
+	<Identify>
+		<oai:repositoryName>OLAC Sample Data Provider</oai:repositoryName>
+		<oai:baseURL>https://hughandbecky.us/Hugh-CV/olac/oai.xml</oai:baseURL>
+		<oai:protocolVersion>2.0</oai:protocolVersion>
+		<oai:adminEmail>i+OLAC2@hp3.me</oai:adminEmail>
+		<oai:earliestDatestamp>2000-01-01</oai:earliestDatestamp>
+		<oai:deletedRecord>no</oai:deletedRecord>
+		<oai:granularity>YYYY-MM-DD</oai:granularity>
+		<oai:description>
+			<oai-identifier
+				xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier" xsi:schemaLocation=" http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+				<scheme>oai</scheme>
+				<repositoryIdentifier>hugh4.us</repositoryIdentifier>
+				<delimiter>:</delimiter>
+				<sampleIdentifier>oai:hugh4.us:0001</sampleIdentifier>
+			</oai-identifier>
+		</oai:description>
+		<oai:description>
+			<olac-archive
+				xmlns="http://www.language-archives.org/OLAC/1.1/olac-archive"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="personal" currentAsOf="2022-02-10" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/olac-archive http://www.language-archives.org/OLAC/1.1/olac-archive.xsd">
+				<archiveURL>https://example.com/</archiveURL>
+				<participant name="Some person" role="Creative" email="someone@example.com"/>
+				<participant name="Some other person" role="Linguist" email="someone-else@example.com"/>
+				<participant name="Hugh J Paterson III" role="Creative" email="i+OLAC2@hp3.me"/>
+				<institution>OLAC Tester</institution>
+				<institutionURL>http://hugh4.us</institutionURL>
+				<shortLocation>Oregon</shortLocation>
+				<location>Some long address format</location>
+				<synopsis>Synopsis of the types of content described in the data provided by the data provider</synopsis>
+				<access>Access description of the data provider</access>
+				<archivalSubmissionPolicy>How to submit content to the data provider.</archivalSubmissionPolicy>
+			</olac-archive>
+		</oai:description>
+	</Identify>
+	<ListMetadataFormats>
+		<oai:metadataFormat>
+			<oai:metadataPrefix>olac</oai:metadataPrefix>
+			<oai:schema>http://www.language-archives.org/OLAC/1.1/olac.xsd</oai:schema>
+			<oai:metadataNamespace>http://www.language-archives.org/OLAC/1.1/</oai:metadataNamespace>
+		</oai:metadataFormat>
+	</ListMetadataFormats>
+	<ListRecords metadataPrefix="olac">
+		<oai:record>
+			<oai:header>
+				<oai:identifier>oai:hugh4.us:0001</oai:identifier>
+				<oai:datestamp>2023-01-07</oai:datestamp>
+				<oai:setSpec>LanguageSoftware</oai:setSpec>
+				<oai:setSpec>Software</oai:setSpec>
+<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
+			</oai:header>
+			<oai:metadata>
+				<olac:olac>
+					<dc:title xml:lang="en">ELAN</dc:title>
+					<dcterms:alternative xml:lang="en">EUDICO Linguistic Annotator</dcterms:alternative>
+					<dcterms:alternative xml:lang="en">EUDICO Annotator Tool</dcterms:alternative>
+					<dc:type xsi:type="dcterms:DCMIType">Software</dc:type>
+					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
+					<dc:language xsi:type="dcterms:RFC1766">de</dc:language>
+					<dcterms:issued xsi:type="dcterms:W3CDTF">2022-07-04</dcterms:issued>
+					<dc:date xsi:type="dcterms:W3CDTF">2022</dc:date>
+					<dc:identifier>Version 6.4</dc:identifier>
+					<dcterms:bibliographicCitation xml:lang="en">Sloetjes, Hans. 2022. “ELAN.” Version 6.4. Windows/macOS/Linux. [Java application]. Nijmegen: Max Planck Institute for Psycholinguistics, The Language Archive. https://archive.mpi.nl/tla/elan.</dcterms:bibliographicCitation>
+					<dc:identifier xsi:type="dcterms:URI">https://archive.mpi.nl/tla/elan</dc:identifier>
+					<dcterms:provenance>https://archive.mpi.nl/tla/elan/previous</dcterms:provenance>
+					<dcterms:publisher>https://archive.mpi.nl/tla</dcterms:publisher>
+					<dc:publisher xml:lang="en">Max Planck Institute for Psycholinguistics, The Language Archive, Nijmegen, The Netherlands</dc:publisher>
+					<dc:contributor xsi:type="olac:role" olac:code="developer" xml:lang="en"> Sloetjes, Hans</dc:contributor>
+					<dc:format  xml:lang="en">Java Application</dc:format>
+					<dc:description xml:lang="en">ELAN is written in the Java programming language. Distributions are available for Windows, macOS and Linux. With ELAN a user can add an unlimited number of textual annotations to audio and/or video recordings. An annotation can be a sentence, word or gloss, a comment, translation or a description of any feature observed in the media. Annotations can be created on multiple layers, called tiers. Tiers can be hierarchically interconnected. An annotation can either be time-aligned to the media or it can refer to other existing annotations. The content of annotations consists of Unicode text and annotation documents are stored in an XML format (EAF). Main features and characteristics of ELAN include: several ways to view the annotations, each view is connected to and synchronized with the media timeline; the creation of multiple tiers and tier hierarchies; the use of Controlled Vocabularies; linking of up to 4 video files with an annotation document; media playback support; building upon on existing, native media frameworks, like Windows Media Player, QuickTime or VLC; support for diverse audio and video formats (subject to operating system capabilities), high performance media playback can usually be achieved.</dc:description>
+					<dc:identifier xml:lang="en">There are nine Manifestations for this Expression. These include: Windows [.exe], Windows [.zip]; macOS [.zip], macOS [.dmg]; macOS-M1 [.zip], macOS-M1[.dmg]; Linux [.tar.gz]; Linux [.deb]; Source [.zip]</dc:identifier>
+					<dcterms:tableOfContents>https://www.mpi.nl/tools/elan/ELAN_6-4_win.exe ; https://www.mpi.nl/tools/elan/ELAN_6-4_win.zip ; https://www.mpi.nl/tools/elan/ELAN_6-4_mac.zip ; https://www.mpi.nl/tools/elan/ELAN_6-4_mac.dmg ; https://www.mpi.nl/tools/elan/ELAN_6-4_M1_mac.zip ; https://www.mpi.nl/tools/elan/ELAN_6-4_M1_mac.dmg ; https://www.mpi.nl/tools/elan/ELAN_6-4_linux.tar.gz ; https://www.mpi.nl/tools/elan/ELAN_6-4_linux.deb ; https://www.mpi.nl/tools/elan/ELAN_6-4_src.zip</dcterms:tableOfContents>
+					<dc:rights xml:lang="en">Copyright</dc:rights>
+					<dc:rights>http://rightsstatements.org/vocab/InC/1.0</dc:rights>
+					<dcterms:license>https://www.gnu.org/licenses/gpl-3.0.en.html</dcterms:license>
+					<dcterms:audience>Language Scholars</dcterms:audience>
+					<dc:source>https://archive.mpi.nl/tla/elan/download</dc:source>
+					<dcterms:replaces>https://archive.mpi.nl/tla/elan/previous</dcterms:replaces>
+					<dcterms:accessRights>Open Access</dcterms:accessRights>
+					<dc:relation>oai:hugh4.us:0002</dc:relation>
+					<dc:relation>oai:hugh4.us:0003</dc:relation>
+					<dc:relation  xsi:type="dcterms:URI">oai:hugh4.us:0006</dc:relation>
+					<dcterms:hasFormat  xsi:type="dcterms:URI">oai:hugh4.us:0009</dcterms:hasFormat>
+					<dcterms:hasFormat>oai:hugh4.us:0007</dcterms:hasFormat>
+					<dcterms:hasFormat>oai:hugh4.us:0008</dcterms:hasFormat>
+					<dcterms:hasFormat>oai:hugh4.us:0010</dcterms:hasFormat>
+					<dcterms:hasFormat>oai:hugh4.us:0011</dcterms:hasFormat>
+					<dcterms:hasFormat>oai:hugh4.us:0012</dcterms:hasFormat>
+					<dcterms:replaces>oai:hugh4.us:0007</dcterms:replaces>
+				</olac:olac>
+			</oai:metadata>
+			<oai:about><provenance
+      xmlns="http://www.openarchives.org/OAI/2.0/provenance" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance
+      http://www.openarchives.org/OAI/2.0/provenance.xsd">
+    <originDescription harvestDate="2012-02-02T14:10:02Z" altered="true">
+      <baseURL>http://the.oa.org</baseURL>
+      <identifier>oai:r2:klik001</identifier>
+      <datestamp>2002-01-01</datestamp>
+      <metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+    </originDescription>
+  </provenance>
+</oai:about>
+		</oai:record>
+	</ListRecords>
+</Repository>
+
