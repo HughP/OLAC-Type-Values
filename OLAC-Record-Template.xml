@@ -317,7 +317,7 @@
 	<!-- ### Rights.  -->
 	<!-- ### Rights statements need to be addressed in several ways. RightsHolder is not related to a single   -->
 	<!-- ### Why can't dcterms:license be modified with dcterms:dateValid if the license expires at some point?-->
-	<!-- ### If dateCopyright appears in the record, then copyrigh should be listed among the rights, and vice versa-->
+	<!-- ### If dateCopyright appears in the record, then copyright should be listed among the rights, and vice versa-->
 	<dc:rights>[…]</dc:rights>
 	<dc:rights xml:lang="[...]">[…]</dc:rights>
 	<dc:rights xsi:type="dcterms:uri">[…]</dc:rights>

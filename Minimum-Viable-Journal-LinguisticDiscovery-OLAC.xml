@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Repository
+	xmlns="http://www.openarchives.org/OAI/2.0/static-repository"
+	xmlns:oai="http://www.openarchives.org/OAI/2.0/"
+	xmlns:olac="http://www.language-archives.org/OLAC/1.1/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/static-repository http://www.language-archives.org/OLAC/1.1/static-repository.xsd http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
+	<!-- https://dublincore.org/schemas/xmls/qdc/2006/01/06/dcterms.xsd https://dublincore.org/schemas/xmls/qdc/2006/01/06/dc.xsd -->
+	<Identify>
+		<oai:repositoryName>OLAC Sample Data Provider for a Journal</oai:repositoryName>
+		<oai:baseURL>https://hughandbecky.us/Hugh-CV/olac/oai.xml</oai:baseURL>
+		<oai:protocolVersion>2.0</oai:protocolVersion>
+		<oai:adminEmail>i+OLAC2@hp3.me</oai:adminEmail>
+		<oai:earliestDatestamp>2000-01-01</oai:earliestDatestamp>
+		<oai:deletedRecord>no</oai:deletedRecord>
+		<oai:granularity>YYYY-MM-DD</oai:granularity>
+		<oai:description>
+			<oai-identifier
+				xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier" xsi:schemaLocation=" http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+				<scheme>oai</scheme>
+				<repositoryIdentifier>hugh4.us</repositoryIdentifier>
+				<delimiter>:</delimiter>
+				<sampleIdentifier>oai:hugh4.us:0001</sampleIdentifier>
+			</oai-identifier>
+		</oai:description>
+		<oai:description>
+			<olac-archive
+				xmlns="http://www.language-archives.org/OLAC/1.1/olac-archive"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="personal" currentAsOf="2022-02-10" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/olac-archive http://www.language-archives.org/OLAC/1.1/olac-archive.xsd">
+				<archiveURL>https://example.com/</archiveURL>
+				<participant name="Some person" role="Creative" email="someone@example.com"/>
+				<participant name="Some other person" role="Linguist" email="someone-else@example.com"/>
+				<participant name="Hugh J Paterson III" role="Creative" email="i+OLAC2@hp3.me"/>
+				<institution>OLAC Tester</institution>
+				<institutionURL>http://hugh4.us</institutionURL>
+				<shortLocation>Oregon</shortLocation>
+				<location>Some long address format</location>
+				<synopsis>Synopsis of the types of content described in the data provided by the data provider</synopsis>
+				<access>Access description of the data provider</access>
+				<archivalSubmissionPolicy>How to submit content to the data provider.</archivalSubmissionPolicy>
+			</olac-archive>
+		</oai:description>
+	</Identify>
+	<ListMetadataFormats>
+		<oai:metadataFormat>
+			<oai:metadataPrefix>olac</oai:metadataPrefix>
+			<oai:schema>http://www.language-archives.org/OLAC/1.1/olac.xsd</oai:schema>
+			<oai:metadataNamespace>http://www.language-archives.org/OLAC/1.1/</oai:metadataNamespace>
+		</oai:metadataFormat>
+	</ListMetadataFormats>
+	<ListRecords metadataPrefix="olac">
+		<oai:record>
+			<oai:header>
+				<oai:identifier>oai:hugh4.us:0001</oai:identifier>
+				<oai:datestamp>2023-01-07</oai:datestamp>
+				<oai:setSpec>Journal</oai:setSpec>
+				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
+			</oai:header>
+			<oai:metadata>
+				<olac:olac>
+					<dc:identifier>L-ISSN:1537-0852</dc:identifier>
+					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/issue</dc:identifier>
+					<dc:description>Linking Record</dc:description>
+					<dcterms:created xsi:type="dcterms:W3CDTF">2002</dcterms:created>
+					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
+					<hasPart xsi:type="dcterms:uri">e-ISSN:1537-0852</hasPart>
+					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
+					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
+					<dc:title>Linguistic Discovery</dc:title>
+					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
+					<dc:description xsi:type="abstract">Linguistic Discovery is a data-focused, refereed online journal which promotes research on lesser studied languages. It utilizes the capabilities of the digital environment to provide scholarly information, including audio and video content, in the field of linguistics research.</dc:description>
+					<dc:publisher>Dartmouth College Library</dc:publisher>
+					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:audience>Linguists</dcterms:audience>
+					<dcterms:audience>Language Scholars</dcterms:audience>
+					<dcterms:accessRights>Public Access</dcterms:accessRights>
+					<dcterms:license xml:lang="en">Implied License</dcterms:license>
+					<dc:format>Digital</dc:format>
+					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:accrualMethod>https://journals.dartmouth.edu/ljournal/submission.html</dcterms:accrualMethod>
+					<dcterms:accrualPeriodicity>http://rdaregistry.info/termList/frequency/1012</dcterms:accrualPeriodicity>
+					<dcterms:accrualPolicy>http://rdaregistry.info/termList/RDACollectionAccrualPolicy/1004</dcterms:accrualPolicy>
+				</olac:olac>
+			</oai:metadata>
+			<oai:about>
+				<provenance
+					xmlns="http://www.openarchives.org/OAI/2.0/provenance"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance
+      http://www.openarchives.org/OAI/2.0/provenance.xsd">
+					<originDescription harvestDate="2012-02-02T14:10:02Z" altered="true">
+						<baseURL>http://the.oa.org</baseURL>
+						<identifier>oai:r2:klik001</identifier>
+						<datestamp>2002-01-01</datestamp>
+						<metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+					</originDescription>
+				</provenance>
+			</oai:about>
+		</oai:record>
+		<oai:record>
+			<oai:header>
+				<oai:identifier>oai:hugh4.us:0002</oai:identifier>
+				<oai:datestamp>2023-01-07</oai:datestamp>
+				<oai:setSpec>Journal</oai:setSpec>
+				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
+			</oai:header>
+			<oai:metadata>
+				<olac:olac>
+					<dc:identifier>e-ISSN:1537-0852</dc:identifier>
+					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/issue</dc:identifier>
+					<dc:description>Journal Published Online</dc:description>
+					<dcterms:created xsi:type="dcterms:W3CDTF">2002</dcterms:created>
+					<dc:contributor xsi:type="marcrel:role" marcrel:code="pbd" xml:lang="en">Whaley, Lindsay J.</dc:contributor>
+					<dcterms:contributor xsi:type="marcrel:role" marcrel:code="pbd">https://lccn.loc.gov/n96083450</dcterms:contributor>
+					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
+					<dcterms:isPartOf xsi:type="dcterms:uri">e-ISSN:1537-0852</dcterms:isPartOf>
+					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
+					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
+					<dc:title>Linguistic Discovery</dc:title>
+					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
+					<dc:description xsi:type="abstract">Linguistic Discovery is a data-focused, refereed online journal which promotes research on lesser studied languages. It utilizes the capabilities of the digital environment to provide scholarly information, including audio and video content, in the field of linguistics research.</dc:description>
+					<dc:publisher>Dartmouth College Library</dc:publisher>
+					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:audience>Linguists</dcterms:audience>
+					<dcterms:audience>Language Scholars</dcterms:audience>
+					<dcterms:accessRights>Public Access</dcterms:accessRights>
+					<dcterms:license xml:lang="en">Implied License</dcterms:license>
+					<dc:format>Digital</dc:format>
+					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:accrualMethod>https://journals.dartmouth.edu/ljournal/submission.html</dcterms:accrualMethod>
+					<dcterms:accrualPeriodicity>http://rdaregistry.info/termList/frequency/1012</dcterms:accrualPeriodicity>
+					<dcterms:accrualPolicy>http://rdaregistry.info/termList/RDACollectionAccrualPolicy/1004</dcterms:accrualPolicy>
+				</olac:olac>
+			</oai:metadata>
+			<oai:about>
+				<provenance
+					xmlns="http://www.openarchives.org/OAI/2.0/provenance"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance
+      http://www.openarchives.org/OAI/2.0/provenance.xsd">
+					<originDescription harvestDate="2012-02-02T14:10:02Z" altered="true">
+						<baseURL>http://the.oa.org</baseURL>
+						<identifier>oai:r2:klik001</identifier>
+						<datestamp>2002-01-01</datestamp>
+						<metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+					</originDescription>
+				</provenance>
+			</oai:about>
+		</oai:record>
+		<oai:record>
+			<oai:header>
+				<oai:identifier>oai:hugh4.us:0003</oai:identifier>
+				<oai:datestamp>2023-01-07</oai:datestamp>
+				<oai:setSpec>Journal</oai:setSpec>
+				<oai:setSpec>Volume</oai:setSpec>
+				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
+			</oai:header>
+			<oai:metadata>
+				<olac:olac>
+					<dc:identifier>Volume 1</dc:identifier>
+					<dc:description>Volume Record</dc:description>
+					<dc:description>Volume in an online journal with no specific date of release for issues and no specific identifier for volumes or issues.</dc:description>
+					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
+					<dc:contributor xsi:type="marcrel:role" marcrel:code="pbd" xml:lang="en">Whaley, Lindsay J.</dc:contributor>
+					<dcterms:contributor xsi:type="marcrel:role" marcrel:code="pbd">https://lccn.loc.gov/n96083450</dcterms:contributor>
+					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0002</dcterms:isPartOf>
+					<dcterms:hasPart xsi:type="dcterms:uri">oai:hugh4.us:0004</dcterms:hasPart>
+					<dcterms:hasPart xsi:type="dcterms:uri">oai:hugh4.us:0005</dcterms:hasPart>
+					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
+					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
+					<dc:title>Volume 1</dc:title>
+					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
+					<dc:description xsi:type="dcterms:tableOfContents">Issue 1; Issue 2</dc:description>
+					<dc:publisher>Dartmouth College Library</dc:publisher>
+					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:audience>Linguists</dcterms:audience>
+					<dcterms:audience>Language Scholars</dcterms:audience>
+					<dcterms:accessRights>Public Access</dcterms:accessRights>
+					<dcterms:license xml:lang="en">Implied License</dcterms:license>
+					<dc:format>Digital</dc:format>
+					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:accrualMethod>https://journals.dartmouth.edu/ljournal/submission.html</dcterms:accrualMethod>
+					<dcterms:accrualPeriodicity>http://rdaregistry.info/termList/frequency/1012</dcterms:accrualPeriodicity>
+					<dcterms:accrualPolicy>http://rdaregistry.info/termList/RDACollectionAccrualPolicy/1001</dcterms:accrualPolicy>
+				</olac:olac>
+			</oai:metadata>
+			<oai:about>
+				<provenance
+					xmlns="http://www.openarchives.org/OAI/2.0/provenance"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance
+      http://www.openarchives.org/OAI/2.0/provenance.xsd">
+					<originDescription harvestDate="2012-02-02T14:10:02Z" altered="true">
+						<baseURL>http://the.oa.org</baseURL>
+						<identifier>oai:r2:klik001</identifier>
+						<datestamp>2002-01-01</datestamp>
+						<metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+					</originDescription>
+				</provenance>
+			</oai:about>
+		</oai:record>
+		<oai:record>
+			<oai:header>
+				<oai:identifier>oai:hugh4.us:0004</oai:identifier>
+				<oai:datestamp>2023-01-07</oai:datestamp>
+				<oai:setSpec>Journal</oai:setSpec>
+				<oai:setSpec>Issue</oai:setSpec>
+				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
+			</oai:header>
+			<oai:metadata>
+				<olac:olac>
+					<dc:identifier>Issue 1</dc:identifier>
+					<dc:description>Issue Record</dc:description>
+					<dc:description>Issue in an online journal with no specific date of release for issues and no specific identifier for volumes or issues.</dc:description>
+					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
+					<dc:contributor xsi:type="marcrel:role" marcrel:code="pbd" xml:lang="en">Whaley, Lindsay J.</dc:contributor>
+					<dcterms:contributor xsi:type="marcrel:role" marcrel:code="pbd">https://lccn.loc.gov/n96083450</dcterms:contributor>
+					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0003</dcterms:isPartOf>
+					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
+					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
+					<dc:title>issue 1</dc:title>
+					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
+					<dc:description xsi:type="dcterms:tableOfContents">Reanalysis of Passive and Negative Prefixes in Seri ; On Some Control Structures in Hellenistic Greek: A Comparison with Classical and Modern Greek ; Notes on Agreement in Itelmen ; What Does Yaghan Have to Do with Digital Technology?</dc:description>
+					<dc:publisher>Dartmouth College Library</dc:publisher>
+					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:audience>Linguists</dcterms:audience>
+					<dcterms:audience>Language Scholars</dcterms:audience>
+					<dcterms:accessRights>Public Access</dcterms:accessRights>
+					<dcterms:license xml:lang="en">Implied License</dcterms:license>
+					<dc:format>Digital</dc:format>
+					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:accrualMethod>https://journals.dartmouth.edu/ljournal/submission.html</dcterms:accrualMethod>
+					<dcterms:accrualPeriodicity>http://rdaregistry.info/termList/frequency/1012</dcterms:accrualPeriodicity>
+					<dcterms:accrualPolicy>http://rdaregistry.info/termList/RDACollectionAccrualPolicy/1001</dcterms:accrualPolicy>
+				</olac:olac>
+			</oai:metadata>
+			<oai:about>
+				<provenance
+					xmlns="http://www.openarchives.org/OAI/2.0/provenance"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance
+      http://www.openarchives.org/OAI/2.0/provenance.xsd">
+					<originDescription harvestDate="2012-02-02T14:10:02Z" altered="true">
+						<baseURL>http://the.oa.org</baseURL>
+						<identifier>oai:r2:klik001</identifier>
+						<datestamp>2002-01-01</datestamp>
+						<metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+					</originDescription>
+				</provenance>
+			</oai:about>
+		</oai:record>
+		<oai:record>
+			<oai:header>
+				<oai:identifier>oai:hugh4.us:0005</oai:identifier>
+				<oai:datestamp>2023-01-07</oai:datestamp>
+				<oai:setSpec>Journal</oai:setSpec>
+				<oai:setSpec>Issue</oai:setSpec>
+				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
+			</oai:header>
+			<oai:metadata>
+				<olac:olac>
+					<dc:identifier>Issue 2</dc:identifier>
+					<dc:description>Issue Record</dc:description>
+					<dc:description>Issue in an online journal with no specific date of release for issues and no specific identifier for volumes or issues.</dc:description>
+					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
+					<dc:contributor xsi:type="marcrel:role" marcrel:code="pbd" xml:lang="en">Whaley, Lindsay J.</dc:contributor>
+					<dcterms:contributor xsi:type="marcrel:role" marcrel:code="pbd">https://lccn.loc.gov/n96083450</dcterms:contributor>
+					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0004</dcterms:isPartOf>
+					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
+					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
+					<dc:title>Issue 2</dc:title>
+					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
+					<dc:description xsi:type="dcterms:tableOfContents">Origins of Apparent Violations of the "No Phrase" Constraint in Modern Georgian ; A New Passive in Kaqchikel ; Archiving Electronic Journals ; Vowel Harmony in Oroqen</dc:description>
+					<dc:publisher>Dartmouth College Library</dc:publisher>
+					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:audience>Linguists</dcterms:audience>
+					<dcterms:audience>Language Scholars</dcterms:audience>
+					<dcterms:accessRights>Public Access</dcterms:accessRights>
+					<dcterms:license xml:lang="en">Implied License</dcterms:license>
+					<dc:format>Digital</dc:format>
+					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:accrualMethod>https://journals.dartmouth.edu/ljournal/submission.html</dcterms:accrualMethod>
+					<dcterms:accrualPeriodicity>http://rdaregistry.info/termList/frequency/1012</dcterms:accrualPeriodicity>
+					<dcterms:accrualPolicy>http://rdaregistry.info/termList/RDACollectionAccrualPolicy/1001</dcterms:accrualPolicy>
+				</olac:olac>
+			</oai:metadata>
+			<oai:about>
+				<provenance
+					xmlns="http://www.openarchives.org/OAI/2.0/provenance"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance
+      http://www.openarchives.org/OAI/2.0/provenance.xsd">
+					<originDescription harvestDate="2012-02-02T14:10:02Z" altered="true">
+						<baseURL>http://the.oa.org</baseURL>
+						<identifier>oai:r2:klik001</identifier>
+						<datestamp>2002-01-01</datestamp>
+						<metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+					</originDescription>
+				</provenance>
+			</oai:about>
+		</oai:record>
+		<oai:record>
+			<oai:header>
+				<oai:identifier>oai:hugh4.us:0006</oai:identifier>
+				<oai:datestamp>2023-01-07</oai:datestamp>
+				<oai:setSpec>Journal</oai:setSpec>
+				<oai:setSpec>Article</oai:setSpec>
+				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
+			</oai:header>
+			<oai:metadata>
+				<olac:olac>
+					<dc:identifier>10.1349/PS1.1537-0852.A.1</dc:identifier>
+					<dc:identifier>doi:10.1349/PS1.1537-0852.A.1</dc:identifier>
+					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/article/1</dc:identifier>
+					<dc:description  xsi:type="dcterms:abstract">Two productive Seri prefixes, negative and passive, are in a limited number of cases reanalyzed as part of the verb stem. This reanalysis has produced homophonous verb forms: one group is clearly analytical (affix + root) and one group is clearly synthetic. The evidence that reanalysis has taken place is presented. These new verb roots enter into new morphological constructions. And since the original analytical verb forms continue to exist, the result is the coexistence of homophonous and sometimes virtually synonymous words (such as the original transitive verb and a new causative verb that is based on a reanalyzed passive).</dc:description>
+					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
+					<dc:contributor xsi:type="olac:role" olac:code="Author" xml:lang="en">Marlett, Stephen A.</dc:contributor>
+					<dcterms:contributor xsi:type="olac:role" olac:code="Author">https://lccn.loc.gov/no2003078023</dcterms:contributor>
+					<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0004</dcterms:isPartOf>
+					<dc:subject xsi:type="dcterms:lcsh">Seri language</dc:subject>
+					<dc:subject xsi:type="dcterms:lcsh">Seri language--Passive voice</dc:subject>
+					<dc:subject xsi:type="dcterms:lcsh">Seri language--Verb</dc:subject>
+					<dcterms:subject xsi:type="dcterms:lcsh">http://id.loc.gov/authorities/subjects/sh85120224</dcterms:subject>
+					<dc:subject xsi:type="olac:language" olac:code="sei">Seri</dc:subject>
+					<dc:subject xsi:type="olac:linguistic-field" olac:code="morphology">morphology</dc:subject>
+					<dc:title>Reanalysis of Passive and Negative Prefixes in Seri</dc:title>
+					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
+					<dc:description xsi:type="dcterms:tableOfContents">1. Introduction ; 2. Etymological Passives ; 3. Etymological Negatives ; 4. Is Reanalysis Gradual or Not?  How and Why Does It Happen? ; 5. Conclusion ; 6. References</dc:description>
+					<dc:publisher>Dartmouth College Library</dc:publisher>
+					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:audience>Linguists</dcterms:audience>
+					<dcterms:audience>Language Scholars</dcterms:audience>
+					<dcterms:accessRights>Public Access</dcterms:accessRights>
+					<dcterms:license xml:lang="en">Implied License</dcterms:license>
+					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:hasFormat xsi:type="dcterms:uri">oai:hugh4.us:0007</dcterms:hasFormat>
+					<dc:format xsi:type="dcterms:IMT">text/html</dc:format>
+				</olac:olac>
+			</oai:metadata>
+			<oai:about>
+				<provenance
+					xmlns="http://www.openarchives.org/OAI/2.0/provenance"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance
+      http://www.openarchives.org/OAI/2.0/provenance.xsd">
+					<originDescription harvestDate="2012-02-02T14:10:02Z" altered="true">
+						<baseURL>http://the.oa.org</baseURL>
+						<identifier>oai:r2:klik001</identifier>
+						<datestamp>2002-01-01</datestamp>
+						<metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+					</originDescription>
+				</provenance>
+			</oai:about>
+		</oai:record>
+		<oai:record>
+			<oai:header>
+				<oai:identifier>oai:hugh4.us:0007</oai:identifier>
+				<oai:datestamp>2023-01-07</oai:datestamp>
+				<oai:setSpec>Journal</oai:setSpec>
+				<oai:setSpec>Article</oai:setSpec>
+				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
+			</oai:header>
+			<oai:metadata>
+				<olac:olac>
+					<dc:identifier>10.1349/PS1.1537-0852.A.1</dc:identifier>
+					<dc:identifier>doi:10.1349/PS1.1537-0852.A.1</dc:identifier>
+					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/document/261</dc:identifier>
+					<dc:description  xsi:type="dcterms:abstract">Two productive Seri prefixes, negative and passive, are in a limited number of cases reanalyzed as part of the verb stem. This reanalysis has produced homophonous verb forms: one group is clearly analytical (affix + root) and one group is clearly synthetic. The evidence that reanalysis has taken place is presented. These new verb roots enter into new morphological constructions. And since the original analytical verb forms continue to exist, the result is the coexistence of homophonous and sometimes virtually synonymous words (such as the original transitive verb and a new causative verb that is based on a reanalyzed passive).</dc:description>
+					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
+					<dc:contributor xsi:type="olac:role" olac:code="Author" xml:lang="en">Marlett, Stephen A.</dc:contributor>
+					<dcterms:contributor xsi:type="olac:role" olac:code="Author">https://lccn.loc.gov/no2003078023</dcterms:contributor>
+					<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0004</dcterms:isPartOf>
+					<dc:subject xsi:type="dcterms:lcsh">Seri language</dc:subject>
+					<dc:subject xsi:type="dcterms:lcsh">Seri language--Passive voice</dc:subject>
+					<dc:subject xsi:type="dcterms:lcsh">Seri language--Verb</dc:subject>
+					<dcterms:subject xsi:type="dcterms:lcsh">http://id.loc.gov/authorities/subjects/sh85120224</dcterms:subject>
+					<dc:subject xsi:type="olac:language" olac:code="sei">Seri</dc:subject>
+					<dc:subject xsi:type="olac:linguistic-field" olac:code="morphology">morphology</dc:subject>
+					<dc:title>Reanalysis of Passive and Negative Prefixes in Seri</dc:title>
+					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
+					<dc:description xsi:type="dcterms:tableOfContents">1. Introduction ; 2. Etymological Passives ; 3. Etymological Negatives ; 4. Is Reanalysis Gradual or Not?  How and Why Does It Happen? ; 5. Conclusion ; 6. References</dc:description>
+					<dc:publisher>Dartmouth College Library</dc:publisher>
+					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:audience>Linguists</dcterms:audience>
+					<dcterms:audience>Language Scholars</dcterms:audience>
+					<dcterms:accessRights>Public Access</dcterms:accessRights>
+					<dcterms:license xml:lang="en">Implied License</dcterms:license>
+					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:hasFormat xsi:type="dcterms:uri">oai:hugh4.us:0006</dcterms:hasFormat>
+					<dc:format xsi:type="dcterms:IMT">application/pdf</dc:format>
+					<dcterms:extent>15 pages</dcterms:extent>
+				</olac:olac>
+			</oai:metadata>
+			<oai:about>
+				<provenance
+					xmlns="http://www.openarchives.org/OAI/2.0/provenance"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance
+      http://www.openarchives.org/OAI/2.0/provenance.xsd">
+					<originDescription harvestDate="2012-02-02T14:10:02Z" altered="true">
+						<baseURL>http://the.oa.org</baseURL>
+						<identifier>oai:r2:klik001</identifier>
+						<datestamp>2002-01-01</datestamp>
+						<metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+					</originDescription>
+				</provenance>
+			</oai:about>
+		</oai:record>
+		<oai:record>
+			<oai:header>
+				<oai:identifier>oai:hugh4.us:0008</oai:identifier>
+				<oai:datestamp>2023-01-07</oai:datestamp>
+				<oai:setSpec>Journal</oai:setSpec>
+				<oai:setSpec>Article</oai:setSpec>
+				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
+			</oai:header>
+			<oai:metadata>
+				<olac:olac>
+					<dc:identifier>10.1349/PS1.1537-0852.A.61</dc:identifier>
+					<dc:identifier>doi:10.1349/PS1.1537-0852.A.61</dc:identifier>
+					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/article/61</dc:identifier>
+					<dc:description  xsi:type="dcterms:abstract">Control Structures in Ancient Greek typically involved infinitival complementation while in Modern Greek, finite complementation is the rule. Hellenistic Greek provides an interesting "way-station" between these two types of complementation, inasmuch as it is both chronologically and structurally transitional. In this contribution to the historical syntax of Greek, an analysis is offered of control structures in Hellenistic Greek, tracing the transition from the Ancient Greek type to the Modern Greek type. Based on the evidence of these three stages of Greek and the developments that the language shows with regard to innovations in the form and properties of control structures, an argument is put forth in support of the view that control is not a purely syntactic phenomenon but rather derives from the lexical semantics of the predicates involved.</dc:description>
+					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
+					<dc:contributor xsi:type="olac:role" olac:code="Author" xml:lang="en">Joseph, Brian D.</dc:contributor>
+					<dcterms:contributor xsi:type="olac:role" olac:code="Author">https://lccn.loc.gov/n83013785</dcterms:contributor>
+					<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0004</dcterms:isPartOf>
+					<dc:subject xsi:type="olac:language" olac:code="grk">Greek Languages</dc:subject>
+					<dc:subject xsi:type="olac:language" olac:code="gre">Modern Greek</dc:subject>
+					<dc:subject xsi:type="olac:language" olac:code="ell">Modern Greek</dc:subject>
+					<dc:subject xsi:type="olac:language" olac:code="grc">Ancient Greek</dc:subject>
+					<dc:subject xsi:type="dcterms:lcsh">Greek language, Hellenistic (300 B.C.-600 A.D.)--Syntax</dc:subject>
+					<dc:subject xsi:type="dcterms:lcsh">Greek language, Modern--Syntax</dc:subject>
+					<dcterms:subject xsi:type="dcterms:lcsh">http://id.loc.gov/authorities/subjects/sh85057166</dcterms:subject>
+					<dcterms:subject xsi:type="dcterms:lcsh">http://id.loc.gov/authorities/subjects/sh85057164</dcterms:subject>
+					<dc:subject xsi:type="olac:linguistic-field" olac:code="syntax">syntax</dc:subject>
+					<dc:subject xsi:type="olac:linguistic-field" olac:code="historical_linguistics">historical_linguistics</dc:subject>
+					<dc:title>On Some Control Structures in Hellenistic Greek: A Comparison with Classical and Modern Greek</dc:title>
+					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
+					<dc:description xsi:type="dcterms:tableOfContents">1. Introduction ; 2. Control Structures in Hellenistic Greek ; 3. PRO or pro in Greek Control Structures? ; 4. Conclusion — Diachronic Syntax and Control ; 5. References</dc:description>
+					<dc:publisher>Dartmouth College Library</dc:publisher>
+					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:audience>Linguists</dcterms:audience>
+					<dcterms:audience>Language Scholars</dcterms:audience>
+					<dcterms:accessRights>Public Access</dcterms:accessRights>
+					<dcterms:license xml:lang="en">Implied License</dcterms:license>
+					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:hasFormat xsi:type="dcterms:uri">oai:hugh4.us:0009</dcterms:hasFormat>
+					<dc:format xsi:type="dcterms:IMT">text/html</dc:format>
+				</olac:olac>
+			</oai:metadata>
+			<oai:about>
+				<provenance
+					xmlns="http://www.openarchives.org/OAI/2.0/provenance"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance
+      http://www.openarchives.org/OAI/2.0/provenance.xsd">
+					<originDescription harvestDate="2012-02-02T14:10:02Z" altered="true">
+						<baseURL>http://the.oa.org</baseURL>
+						<identifier>oai:r2:klik001</identifier>
+						<datestamp>2002-01-01</datestamp>
+						<metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+					</originDescription>
+				</provenance>
+			</oai:about>
+		</oai:record>
+		<oai:record>
+			<oai:header>
+				<oai:identifier>oai:hugh4.us:0009</oai:identifier>
+				<oai:datestamp>2023-01-07</oai:datestamp>
+				<oai:setSpec>Journal</oai:setSpec>
+				<oai:setSpec>Article</oai:setSpec>
+				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
+			</oai:header>
+			<oai:metadata>
+				<olac:olac>
+					<dc:identifier>10.1349/PS1.1537-0852.A.61</dc:identifier>
+					<dc:identifier>doi:10.1349/PS1.1537-0852.A.61</dc:identifier>
+					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/document/241</dc:identifier>
+					<dc:description  xsi:type="dcterms:abstract">Control Structures in Ancient Greek typically involved infinitival complementation while in Modern Greek, finite complementation is the rule. Hellenistic Greek provides an interesting "way-station" between these two types of complementation, inasmuch as it is both chronologically and structurally transitional. In this contribution to the historical syntax of Greek, an analysis is offered of control structures in Hellenistic Greek, tracing the transition from the Ancient Greek type to the Modern Greek type. Based on the evidence of these three stages of Greek and the developments that the language shows with regard to innovations in the form and properties of control structures, an argument is put forth in support of the view that control is not a purely syntactic phenomenon but rather derives from the lexical semantics of the predicates involved.</dc:description>
+					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
+					<dc:contributor xsi:type="olac:role" olac:code="Author" xml:lang="en">Joseph, Brian D.</dc:contributor>
+					<dcterms:contributor xsi:type="olac:role" olac:code="Author">https://lccn.loc.gov/n83013785</dcterms:contributor>
+					<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0004</dcterms:isPartOf>
+					<dc:subject xsi:type="olac:language" olac:code="grk">Greek Languages</dc:subject>
+					<dc:subject xsi:type="olac:language" olac:code="gre">Modern Greek</dc:subject>
+					<dc:subject xsi:type="olac:language" olac:code="ell">Modern Greek</dc:subject>
+					<dc:subject xsi:type="olac:language" olac:code="grc">Ancient Greek</dc:subject>
+					<dc:subject xsi:type="dcterms:lcsh">Greek language, Hellenistic (300 B.C.-600 A.D.)--Syntax</dc:subject>
+					<dc:subject xsi:type="dcterms:lcsh">Greek language, Modern--Syntax</dc:subject>
+					<dcterms:subject xsi:type="dcterms:lcsh">http://id.loc.gov/authorities/subjects/sh85057166</dcterms:subject>
+					<dcterms:subject xsi:type="dcterms:lcsh">http://id.loc.gov/authorities/subjects/sh85057164</dcterms:subject>
+					<dc:subject xsi:type="olac:linguistic-field" olac:code="syntax">syntax</dc:subject>
+					<dc:subject xsi:type="olac:linguistic-field" olac:code="historical_linguistics">historical_linguistics</dc:subject>
+					<dc:title>On Some Control Structures in Hellenistic Greek: A Comparison with Classical and Modern Greek</dc:title>
+					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
+					<dc:description xsi:type="dcterms:tableOfContents">1. Introduction ; 2. Control Structures in Hellenistic Greek ; 3. PRO or pro in Greek Control Structures? ; 4. Conclusion — Diachronic Syntax and Control ; 5. References</dc:description>
+					<dc:publisher>Dartmouth College Library</dc:publisher>
+					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:audience>Linguists</dcterms:audience>
+					<dcterms:audience>Language Scholars</dcterms:audience>
+					<dcterms:accessRights>Public Access</dcterms:accessRights>
+					<dcterms:license xml:lang="en">Implied License</dcterms:license>
+					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:hasFormat xsi:type="dcterms:uri">oai:hugh4.us:0008</dcterms:hasFormat>
+					<dc:format xsi:type="dcterms:IMT">application/pdf</dc:format>
+					<dcterms:extent>18 pages</dcterms:extent>
+				</olac:olac>
+			</oai:metadata>
+			<oai:about>
+				<provenance
+					xmlns="http://www.openarchives.org/OAI/2.0/provenance"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance
+      http://www.openarchives.org/OAI/2.0/provenance.xsd">
+					<originDescription harvestDate="2012-02-02T14:10:02Z" altered="true">
+						<baseURL>http://the.oa.org</baseURL>
+						<identifier>oai:r2:klik001</identifier>
+						<datestamp>2002-01-01</datestamp>
+						<metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+					</originDescription>
+				</provenance>
+			</oai:about>
+		</oai:record>
+	</ListRecords>
+</Repository>
+
