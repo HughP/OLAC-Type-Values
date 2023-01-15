@@ -8,7 +8,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/static-repository http://www.language-archives.org/OLAC/1.1/static-repository.xsd http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd">
 	<!-- https://dublincore.org/schemas/xmls/qdc/2006/01/06/dcterms.xsd https://dublincore.org/schemas/xmls/qdc/2006/01/06/dc.xsd -->
 	<Identify>
-		<oai:repositoryName>OLAC Sample Data Provider for a Journal</oai:repositoryName>
+		<oai:repositoryName>OLAC Sample of an Online Journal</oai:repositoryName>
 		<oai:baseURL>https://hughandbecky.us/Hugh-CV/olac/oai.xml</oai:baseURL>
 		<oai:protocolVersion>2.0</oai:protocolVersion>
 		<oai:adminEmail>i+OLAC2@hp3.me</oai:adminEmail>
@@ -19,9 +19,9 @@
 			<oai-identifier
 				xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier" xsi:schemaLocation=" http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
 				<scheme>oai</scheme>
-				<repositoryIdentifier>hugh4.us</repositoryIdentifier>
+				<repositoryIdentifier>olac.dev</repositoryIdentifier>
 				<delimiter>:</delimiter>
-				<sampleIdentifier>oai:hugh4.us:0001</sampleIdentifier>
+				<sampleIdentifier>oai:olac.dev:0001</sampleIdentifier>
 			</oai-identifier>
 		</oai:description>
 		<oai:description>
@@ -29,16 +29,14 @@
 				xmlns="http://www.language-archives.org/OLAC/1.1/olac-archive"
 				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="personal" currentAsOf="2022-02-10" xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/olac-archive http://www.language-archives.org/OLAC/1.1/olac-archive.xsd">
 				<archiveURL>https://example.com/</archiveURL>
-				<participant name="Some person" role="Creative" email="someone@example.com"/>
-				<participant name="Some other person" role="Linguist" email="someone-else@example.com"/>
 				<participant name="Hugh J Paterson III" role="Creative" email="i+OLAC2@hp3.me"/>
-				<institution>OLAC Tester</institution>
-				<institutionURL>http://hugh4.us</institutionURL>
+				<institution>Open Language Archive Community</institution>
+				<institutionURL>http://olac.dev</institutionURL>
 				<shortLocation>Oregon</shortLocation>
 				<location>Some long address format</location>
-				<synopsis>Synopsis of the types of content described in the data provided by the data provider</synopsis>
-				<access>Access description of the data provider</access>
-				<archivalSubmissionPolicy>How to submit content to the data provider.</archivalSubmissionPolicy>
+				<access>Public Access</access>
+				<synopsis>Content within this repo is Pulic Access taken from the described journal. The structures derived to present the content are, as far as is known in the public domain and remain there. The static repo was handcrafted by Hugh Paterson III based on the first volume, first and second issues, and first two articles of the first issue of the journa Linguistic Discovery. Re-use of this template is encouraged. It is designed to illustrate the use of dcmitype: collection to describe the structure of a joural as well as which fields are applicable to journal, volume, and issues records. When the template has been helpful or foundational, please cite and reference in descriptive academic publicates or source code. Within the dcterms:bibliographicCitation element Chicagot 16th edition (author-date) format is used.</synopsis>
+				<archivalSubmissionPolicy>Content in this repo may be updated from time to time as the resource needs to demonstrate features which are possible to use in the OLAC aggregator. Report errors or suggestions to Hugh Paterson III. Consider making a pull request via github.</archivalSubmissionPolicy>
 			</olac-archive>
 		</oai:description>
 	</Identify>
@@ -52,7 +50,7 @@
 	<ListRecords metadataPrefix="olac">
 		<oai:record>
 			<oai:header>
-				<oai:identifier>oai:hugh4.us:0001</oai:identifier>
+				<oai:identifier>oai:olac.dev:0001</oai:identifier>
 				<oai:datestamp>2023-01-07</oai:datestamp>
 				<oai:setSpec>Journal</oai:setSpec>
 				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
@@ -101,16 +99,16 @@
 		</oai:record>
 		<oai:record>
 			<oai:header>
-				<oai:identifier>oai:hugh4.us:0002</oai:identifier>
+				<oai:identifier>oai:olac.dev:0002</oai:identifier>
 				<oai:datestamp>2023-01-07</oai:datestamp>
 				<oai:setSpec>Journal</oai:setSpec>
-				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
 			</oai:header>
 			<oai:metadata>
 				<olac:olac>
 					<dc:identifier>e-ISSN:1537-0852</dc:identifier>
 					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/issue</dc:identifier>
 					<dc:description>Journal Published Online</dc:description>
+					<dc:description>Continuious pagination scoped to the issue is overtly marked starting in volume 1 issue 1. Minor differences between the HTML manifestations and PDF manifestations exist. For example, HTML manifestations include link formated DOIs where these are ommited from PDF manifestations. Normally such variation would be cause to use hasVersion instead of hasFormat, indicating that the two instaces are two seperate expressions of the same work rather than manifestations.</dc:description>
 					<dcterms:created xsi:type="dcterms:W3CDTF">2002</dcterms:created>
 					<dc:contributor xsi:type="marcrel:role" marcrel:code="pbd" xml:lang="en">Whaley, Lindsay J.</dc:contributor>
 					<dcterms:contributor xsi:type="marcrel:role" marcrel:code="pbd">https://lccn.loc.gov/n96083450</dcterms:contributor>
@@ -152,11 +150,10 @@
 		</oai:record>
 		<oai:record>
 			<oai:header>
-				<oai:identifier>oai:hugh4.us:0003</oai:identifier>
+				<oai:identifier>oai:olac.dev:0003</oai:identifier>
 				<oai:datestamp>2023-01-07</oai:datestamp>
 				<oai:setSpec>Journal</oai:setSpec>
 				<oai:setSpec>Volume</oai:setSpec>
-				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
 			</oai:header>
 			<oai:metadata>
 				<olac:olac>
@@ -167,9 +164,9 @@
 					<dc:contributor xsi:type="marcrel:role" marcrel:code="pbd" xml:lang="en">Whaley, Lindsay J.</dc:contributor>
 					<dcterms:contributor xsi:type="marcrel:role" marcrel:code="pbd">https://lccn.loc.gov/n96083450</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0002</dcterms:isPartOf>
-					<dcterms:hasPart xsi:type="dcterms:uri">oai:hugh4.us:0004</dcterms:hasPart>
-					<dcterms:hasPart xsi:type="dcterms:uri">oai:hugh4.us:0005</dcterms:hasPart>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0002</dcterms:isPartOf>
+					<dcterms:hasPart xsi:type="dcterms:uri">oai:olac.dev:0004</dcterms:hasPart>
+					<dcterms:hasPart xsi:type="dcterms:uri">oai:olac.dev:0005</dcterms:hasPart>
 					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
 					<dc:title>Volume 1</dc:title>
@@ -206,11 +203,10 @@
 		</oai:record>
 		<oai:record>
 			<oai:header>
-				<oai:identifier>oai:hugh4.us:0004</oai:identifier>
+				<oai:identifier>oai:olac.dev:0004</oai:identifier>
 				<oai:datestamp>2023-01-07</oai:datestamp>
 				<oai:setSpec>Journal</oai:setSpec>
 				<oai:setSpec>Issue</oai:setSpec>
-				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
 			</oai:header>
 			<oai:metadata>
 				<olac:olac>
@@ -221,7 +217,7 @@
 					<dc:contributor xsi:type="marcrel:role" marcrel:code="pbd" xml:lang="en">Whaley, Lindsay J.</dc:contributor>
 					<dcterms:contributor xsi:type="marcrel:role" marcrel:code="pbd">https://lccn.loc.gov/n96083450</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0003</dcterms:isPartOf>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0003</dcterms:isPartOf>
 					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
 					<dc:title>issue 1</dc:title>
@@ -258,11 +254,10 @@
 		</oai:record>
 		<oai:record>
 			<oai:header>
-				<oai:identifier>oai:hugh4.us:0005</oai:identifier>
+				<oai:identifier>oai:olac.dev:0005</oai:identifier>
 				<oai:datestamp>2023-01-07</oai:datestamp>
 				<oai:setSpec>Journal</oai:setSpec>
 				<oai:setSpec>Issue</oai:setSpec>
-				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
 			</oai:header>
 			<oai:metadata>
 				<olac:olac>
@@ -273,7 +268,7 @@
 					<dc:contributor xsi:type="marcrel:role" marcrel:code="pbd" xml:lang="en">Whaley, Lindsay J.</dc:contributor>
 					<dcterms:contributor xsi:type="marcrel:role" marcrel:code="pbd">https://lccn.loc.gov/n96083450</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0004</dcterms:isPartOf>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0004</dcterms:isPartOf>
 					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
 					<dc:title>Issue 2</dc:title>
@@ -310,23 +305,23 @@
 		</oai:record>
 		<oai:record>
 			<oai:header>
-				<oai:identifier>oai:hugh4.us:0006</oai:identifier>
+				<oai:identifier>oai:olac.dev:0006</oai:identifier>
 				<oai:datestamp>2023-01-07</oai:datestamp>
 				<oai:setSpec>Journal</oai:setSpec>
 				<oai:setSpec>Article</oai:setSpec>
-				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
 			</oai:header>
 			<oai:metadata>
 				<olac:olac>
 					<dc:identifier>10.1349/PS1.1537-0852.A.1</dc:identifier>
 					<dc:identifier>doi:10.1349/PS1.1537-0852.A.1</dc:identifier>
+					<dcterms:biblographicCitation>Marlett, Stephen A. 2002. “Reanalysis of Passive and Negative Prefixes in Seri.” Linguistic Discovery 1 (1): 1–14. doi:10.1349/PS1.1537-0852.A.1.</dcterms:biblographicCitation>
 					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/article/1</dc:identifier>
 					<dc:description  xsi:type="dcterms:abstract">Two productive Seri prefixes, negative and passive, are in a limited number of cases reanalyzed as part of the verb stem. This reanalysis has produced homophonous verb forms: one group is clearly analytical (affix + root) and one group is clearly synthetic. The evidence that reanalysis has taken place is presented. These new verb roots enter into new morphological constructions. And since the original analytical verb forms continue to exist, the result is the coexistence of homophonous and sometimes virtually synonymous words (such as the original transitive verb and a new causative verb that is based on a reanalyzed passive).</dc:description>
 					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
 					<dc:contributor xsi:type="olac:role" olac:code="Author" xml:lang="en">Marlett, Stephen A.</dc:contributor>
 					<dcterms:contributor xsi:type="olac:role" olac:code="Author">https://lccn.loc.gov/no2003078023</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0004</dcterms:isPartOf>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0004</dcterms:isPartOf>
 					<dc:subject xsi:type="dcterms:lcsh">Seri language</dc:subject>
 					<dc:subject xsi:type="dcterms:lcsh">Seri language--Passive voice</dc:subject>
 					<dc:subject xsi:type="dcterms:lcsh">Seri language--Verb</dc:subject>
@@ -344,7 +339,7 @@
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
 					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
-					<dcterms:hasFormat xsi:type="dcterms:uri">oai:hugh4.us:0007</dcterms:hasFormat>
+					<dcterms:hasFormat xsi:type="dcterms:uri">oai:olac.dev:0007</dcterms:hasFormat>
 					<dc:format xsi:type="dcterms:IMT">text/html</dc:format>
 				</olac:olac>
 			</oai:metadata>
@@ -365,23 +360,23 @@
 		</oai:record>
 		<oai:record>
 			<oai:header>
-				<oai:identifier>oai:hugh4.us:0007</oai:identifier>
+				<oai:identifier>oai:olac.dev:0007</oai:identifier>
 				<oai:datestamp>2023-01-07</oai:datestamp>
 				<oai:setSpec>Journal</oai:setSpec>
 				<oai:setSpec>Article</oai:setSpec>
-				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
 			</oai:header>
 			<oai:metadata>
 				<olac:olac>
 					<dc:identifier>10.1349/PS1.1537-0852.A.1</dc:identifier>
 					<dc:identifier>doi:10.1349/PS1.1537-0852.A.1</dc:identifier>
+					<dcterms:biblographicCitation>Marlett, Stephen A. 2002. “Reanalysis of Passive and Negative Prefixes in Seri.” Linguistic Discovery 1 (1): 1–14. doi:10.1349/PS1.1537-0852.A.1.</dcterms:biblographicCitation>
 					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/document/261</dc:identifier>
 					<dc:description  xsi:type="dcterms:abstract">Two productive Seri prefixes, negative and passive, are in a limited number of cases reanalyzed as part of the verb stem. This reanalysis has produced homophonous verb forms: one group is clearly analytical (affix + root) and one group is clearly synthetic. The evidence that reanalysis has taken place is presented. These new verb roots enter into new morphological constructions. And since the original analytical verb forms continue to exist, the result is the coexistence of homophonous and sometimes virtually synonymous words (such as the original transitive verb and a new causative verb that is based on a reanalyzed passive).</dc:description>
 					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
 					<dc:contributor xsi:type="olac:role" olac:code="Author" xml:lang="en">Marlett, Stephen A.</dc:contributor>
 					<dcterms:contributor xsi:type="olac:role" olac:code="Author">https://lccn.loc.gov/no2003078023</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0004</dcterms:isPartOf>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0004</dcterms:isPartOf>
 					<dc:subject xsi:type="dcterms:lcsh">Seri language</dc:subject>
 					<dc:subject xsi:type="dcterms:lcsh">Seri language--Passive voice</dc:subject>
 					<dc:subject xsi:type="dcterms:lcsh">Seri language--Verb</dc:subject>
@@ -399,7 +394,7 @@
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
 					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
-					<dcterms:hasFormat xsi:type="dcterms:uri">oai:hugh4.us:0006</dcterms:hasFormat>
+					<dcterms:hasFormat xsi:type="dcterms:uri">oai:olac.dev:0006</dcterms:hasFormat>
 					<dc:format xsi:type="dcterms:IMT">application/pdf</dc:format>
 					<dcterms:extent>15 pages</dcterms:extent>
 				</olac:olac>
@@ -421,23 +416,23 @@
 		</oai:record>
 		<oai:record>
 			<oai:header>
-				<oai:identifier>oai:hugh4.us:0008</oai:identifier>
+				<oai:identifier>oai:olac.dev:0008</oai:identifier>
 				<oai:datestamp>2023-01-07</oai:datestamp>
 				<oai:setSpec>Journal</oai:setSpec>
 				<oai:setSpec>Article</oai:setSpec>
-				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
 			</oai:header>
 			<oai:metadata>
 				<olac:olac>
 					<dc:identifier>10.1349/PS1.1537-0852.A.61</dc:identifier>
 					<dc:identifier>doi:10.1349/PS1.1537-0852.A.61</dc:identifier>
+					<dcterms:biblographicCitation>Joseph, Brian D. 2002. “On Some Control Structures in Hellenistic Greek: A Comparison with Classical and Modern Greek.” Linguistic Discovery 1 (1): 15–32. doi:10.1349/PS1.1537-0852.A.61.</dcterms:biblographicCitation>
 					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/article/61</dc:identifier>
 					<dc:description  xsi:type="dcterms:abstract">Control Structures in Ancient Greek typically involved infinitival complementation while in Modern Greek, finite complementation is the rule. Hellenistic Greek provides an interesting "way-station" between these two types of complementation, inasmuch as it is both chronologically and structurally transitional. In this contribution to the historical syntax of Greek, an analysis is offered of control structures in Hellenistic Greek, tracing the transition from the Ancient Greek type to the Modern Greek type. Based on the evidence of these three stages of Greek and the developments that the language shows with regard to innovations in the form and properties of control structures, an argument is put forth in support of the view that control is not a purely syntactic phenomenon but rather derives from the lexical semantics of the predicates involved.</dc:description>
 					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
 					<dc:contributor xsi:type="olac:role" olac:code="Author" xml:lang="en">Joseph, Brian D.</dc:contributor>
 					<dcterms:contributor xsi:type="olac:role" olac:code="Author">https://lccn.loc.gov/n83013785</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0004</dcterms:isPartOf>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0004</dcterms:isPartOf>
 					<dc:subject xsi:type="olac:language" olac:code="grk">Greek Languages</dc:subject>
 					<dc:subject xsi:type="olac:language" olac:code="gre">Modern Greek</dc:subject>
 					<dc:subject xsi:type="olac:language" olac:code="ell">Modern Greek</dc:subject>
@@ -459,7 +454,7 @@
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
 					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
-					<dcterms:hasFormat xsi:type="dcterms:uri">oai:hugh4.us:0009</dcterms:hasFormat>
+					<dcterms:hasFormat xsi:type="dcterms:uri">oai:olac.dev:0009</dcterms:hasFormat>
 					<dc:format xsi:type="dcterms:IMT">text/html</dc:format>
 				</olac:olac>
 			</oai:metadata>
@@ -480,23 +475,23 @@
 		</oai:record>
 		<oai:record>
 			<oai:header>
-				<oai:identifier>oai:hugh4.us:0009</oai:identifier>
+				<oai:identifier>oai:olac.dev:0009</oai:identifier>
 				<oai:datestamp>2023-01-07</oai:datestamp>
 				<oai:setSpec>Journal</oai:setSpec>
 				<oai:setSpec>Article</oai:setSpec>
-				<!-- There is a way to define setSpec groups. This needs to be explored. This means that data providers could contribute to specific sets of records! See documentation here: http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#setDescription and http://www.openarchives.org/OAI/2.0/guidelines-repository.htm#Sets -->
 			</oai:header>
 			<oai:metadata>
 				<olac:olac>
 					<dc:identifier>10.1349/PS1.1537-0852.A.61</dc:identifier>
 					<dc:identifier>doi:10.1349/PS1.1537-0852.A.61</dc:identifier>
+					<dcterms:biblographicCitation>Joseph, Brian D. 2002. “On Some Control Structures in Hellenistic Greek: A Comparison with Classical and Modern Greek.” Linguistic Discovery 1 (1): 15–32. doi:10.1349/PS1.1537-0852.A.61.</dcterms:biblographicCitation>
 					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/document/241</dc:identifier>
 					<dc:description  xsi:type="dcterms:abstract">Control Structures in Ancient Greek typically involved infinitival complementation while in Modern Greek, finite complementation is the rule. Hellenistic Greek provides an interesting "way-station" between these two types of complementation, inasmuch as it is both chronologically and structurally transitional. In this contribution to the historical syntax of Greek, an analysis is offered of control structures in Hellenistic Greek, tracing the transition from the Ancient Greek type to the Modern Greek type. Based on the evidence of these three stages of Greek and the developments that the language shows with regard to innovations in the form and properties of control structures, an argument is put forth in support of the view that control is not a purely syntactic phenomenon but rather derives from the lexical semantics of the predicates involved.</dc:description>
 					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
 					<dc:contributor xsi:type="olac:role" olac:code="Author" xml:lang="en">Joseph, Brian D.</dc:contributor>
 					<dcterms:contributor xsi:type="olac:role" olac:code="Author">https://lccn.loc.gov/n83013785</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:hugh4.us:0004</dcterms:isPartOf>
+					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0004</dcterms:isPartOf>
 					<dc:subject xsi:type="olac:language" olac:code="grk">Greek Languages</dc:subject>
 					<dc:subject xsi:type="olac:language" olac:code="gre">Modern Greek</dc:subject>
 					<dc:subject xsi:type="olac:language" olac:code="ell">Modern Greek</dc:subject>
@@ -518,7 +513,7 @@
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
 					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
-					<dcterms:hasFormat xsi:type="dcterms:uri">oai:hugh4.us:0008</dcterms:hasFormat>
+					<dcterms:hasFormat xsi:type="dcterms:uri">oai:olac.dev:0008</dcterms:hasFormat>
 					<dc:format xsi:type="dcterms:IMT">application/pdf</dc:format>
 					<dcterms:extent>18 pages</dcterms:extent>
 				</olac:olac>
