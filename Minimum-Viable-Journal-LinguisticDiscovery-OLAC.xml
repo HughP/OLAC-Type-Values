@@ -34,8 +34,8 @@
 				<institutionURL>http://olac.dev</institutionURL>
 				<shortLocation>Oregon</shortLocation>
 				<location>Some long address format</location>
-				<access>Public Access</access>
 				<synopsis>Content within this repo is Pulic Access taken from the described journal. The structures derived to present the content are, as far as is known in the public domain and remain there. The static repo was handcrafted by Hugh Paterson III based on the first volume, first and second issues, and first two articles of the first issue of the journa Linguistic Discovery. Re-use of this template is encouraged. It is designed to illustrate the use of dcmitype: collection to describe the structure of a joural as well as which fields are applicable to journal, volume, and issues records. When the template has been helpful or foundational, please cite and reference in descriptive academic publicates or source code. Within the dcterms:bibliographicCitation element Chicagot 16th edition (author-date) format is used.</synopsis>
+				<access>Public Access</access>
 				<archivalSubmissionPolicy>Content in this repo may be updated from time to time as the resource needs to demonstrate features which are possible to use in the OLAC aggregator. Report errors or suggestions to Hugh Paterson III. Consider making a pull request via github.</archivalSubmissionPolicy>
 			</olac-archive>
 		</oai:description>
@@ -58,25 +58,25 @@
 			<oai:metadata>
 				<olac:olac>
 					<dc:identifier>L-ISSN:1537-0852</dc:identifier>
-					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/issue</dc:identifier>
+					<dcterms:identifier>https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/issue</dcterms:identifier>
 					<dc:description>Linking Record</dc:description>
 					<dcterms:created xsi:type="dcterms:W3CDTF">2002</dcterms:created>
 					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
-					<hasPart xsi:type="dcterms:uri">e-ISSN:1537-0852</hasPart>
-					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
+					<dcterms:hasPart xsi:type="dcterms:URI">e-ISSN:1537-0852</dcterms:hasPart>
+					<dc:subject xsi:type="dcterms:LCSH">Linguistics</dc:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
 					<dc:title>Linguistic Discovery</dc:title>
 					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
-					<dc:description xsi:type="abstract">Linguistic Discovery is a data-focused, refereed online journal which promotes research on lesser studied languages. It utilizes the capabilities of the digital environment to provide scholarly information, including audio and video content, in the field of linguistics research.</dc:description>
+					<dcterms:abstract>Linguistic Discovery is a data-focused, refereed online journal which promotes research on lesser studied languages. It utilizes the capabilities of the digital environment to provide scholarly information, including audio and video content, in the field of linguistics research.</dcterms:abstract>
 					<dc:publisher>Dartmouth College Library</dc:publisher>
 					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
-					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:URI">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
 					<dcterms:audience>Linguists</dcterms:audience>
 					<dcterms:audience>Language Scholars</dcterms:audience>
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
 					<dc:format>Digital</dc:format>
-					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:publisher>https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dcterms:publisher>
 					<dcterms:accrualMethod>https://journals.dartmouth.edu/ljournal/submission.html</dcterms:accrualMethod>
 					<dcterms:accrualPeriodicity>http://rdaregistry.info/termList/frequency/1012</dcterms:accrualPeriodicity>
 					<dcterms:accrualPolicy>http://rdaregistry.info/termList/RDACollectionAccrualPolicy/1004</dcterms:accrualPolicy>
@@ -106,28 +106,28 @@
 			<oai:metadata>
 				<olac:olac>
 					<dc:identifier>e-ISSN:1537-0852</dc:identifier>
-					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/issue</dc:identifier>
+					<dcterms:identifier>https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/issue</dcterms:identifier>
 					<dc:description>Journal Published Online</dc:description>
 					<dc:description>Continuious pagination scoped to the issue is overtly marked starting in volume 1 issue 1. Minor differences between the HTML manifestations and PDF manifestations exist. For example, HTML manifestations include link formated DOIs where these are ommited from PDF manifestations. Normally such variation would be cause to use hasVersion instead of hasFormat, indicating that the two instaces are two seperate expressions of the same work rather than manifestations.</dc:description>
 					<dcterms:created xsi:type="dcterms:W3CDTF">2002</dcterms:created>
 					<dc:contributor xsi:type="marcrel:role" marcrel:code="pbd" xml:lang="en">Whaley, Lindsay J.</dc:contributor>
 					<dcterms:contributor xsi:type="marcrel:role" marcrel:code="pbd">https://lccn.loc.gov/n96083450</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">e-ISSN:1537-0852</dcterms:isPartOf>
-					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
+					<dcterms:isPartOf xsi:type="dcterms:URI">e-ISSN:1537-0852</dcterms:isPartOf>
+					<dc:subject xsi:type="dcterms:LCSH">Linguistics</dc:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
 					<dc:title>Linguistic Discovery</dc:title>
 					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
-					<dc:description xsi:type="abstract">Linguistic Discovery is a data-focused, refereed online journal which promotes research on lesser studied languages. It utilizes the capabilities of the digital environment to provide scholarly information, including audio and video content, in the field of linguistics research.</dc:description>
+					<dcterms:abstract>Linguistic Discovery is a data-focused, refereed online journal which promotes research on lesser studied languages. It utilizes the capabilities of the digital environment to provide scholarly information, including audio and video content, in the field of linguistics research.</dcterms:abstract>
 					<dc:publisher>Dartmouth College Library</dc:publisher>
 					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
-					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:URI">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
 					<dcterms:audience>Linguists</dcterms:audience>
 					<dcterms:audience>Language Scholars</dcterms:audience>
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
 					<dc:format>Digital</dc:format>
-					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dc:publisher xsi:type="dcterms:URI">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
 					<dcterms:accrualMethod>https://journals.dartmouth.edu/ljournal/submission.html</dcterms:accrualMethod>
 					<dcterms:accrualPeriodicity>http://rdaregistry.info/termList/frequency/1012</dcterms:accrualPeriodicity>
 					<dcterms:accrualPolicy>http://rdaregistry.info/termList/RDACollectionAccrualPolicy/1004</dcterms:accrualPolicy>
@@ -164,23 +164,23 @@
 					<dc:contributor xsi:type="marcrel:role" marcrel:code="pbd" xml:lang="en">Whaley, Lindsay J.</dc:contributor>
 					<dcterms:contributor xsi:type="marcrel:role" marcrel:code="pbd">https://lccn.loc.gov/n96083450</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0002</dcterms:isPartOf>
-					<dcterms:hasPart xsi:type="dcterms:uri">oai:olac.dev:0004</dcterms:hasPart>
-					<dcterms:hasPart xsi:type="dcterms:uri">oai:olac.dev:0005</dcterms:hasPart>
-					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
+					<dcterms:isPartOf xsi:type="dcterms:URI">oai:olac.dev:0002</dcterms:isPartOf>
+					<dcterms:hasPart xsi:type="dcterms:URI">oai:olac.dev:0004</dcterms:hasPart>
+					<dcterms:hasPart xsi:type="dcterms:URI">oai:olac.dev:0005</dcterms:hasPart>
+					<dc:subject xsi:type="dcterms:LCSH">Linguistics</dc:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
 					<dc:title>Volume 1</dc:title>
 					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
 					<dc:description xsi:type="dcterms:tableOfContents">Issue 1; Issue 2</dc:description>
 					<dc:publisher>Dartmouth College Library</dc:publisher>
 					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
-					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:URI">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
 					<dcterms:audience>Linguists</dcterms:audience>
 					<dcterms:audience>Language Scholars</dcterms:audience>
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
 					<dc:format>Digital</dc:format>
-					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dc:publisher xsi:type="dcterms:URI">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
 					<dcterms:accrualMethod>https://journals.dartmouth.edu/ljournal/submission.html</dcterms:accrualMethod>
 					<dcterms:accrualPeriodicity>http://rdaregistry.info/termList/frequency/1012</dcterms:accrualPeriodicity>
 					<dcterms:accrualPolicy>http://rdaregistry.info/termList/RDACollectionAccrualPolicy/1001</dcterms:accrualPolicy>
@@ -217,21 +217,21 @@
 					<dc:contributor xsi:type="marcrel:role" marcrel:code="pbd" xml:lang="en">Whaley, Lindsay J.</dc:contributor>
 					<dcterms:contributor xsi:type="marcrel:role" marcrel:code="pbd">https://lccn.loc.gov/n96083450</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0003</dcterms:isPartOf>
-					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
+					<dcterms:isPartOf xsi:type="dcterms:URI">oai:olac.dev:0003</dcterms:isPartOf>
+					<dc:subject xsi:type="dcterms:LCSH">Linguistics</dc:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
 					<dc:title>issue 1</dc:title>
 					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
 					<dc:description xsi:type="dcterms:tableOfContents">Reanalysis of Passive and Negative Prefixes in Seri ; On Some Control Structures in Hellenistic Greek: A Comparison with Classical and Modern Greek ; Notes on Agreement in Itelmen ; What Does Yaghan Have to Do with Digital Technology?</dc:description>
 					<dc:publisher>Dartmouth College Library</dc:publisher>
 					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
-					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:URI">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
 					<dcterms:audience>Linguists</dcterms:audience>
 					<dcterms:audience>Language Scholars</dcterms:audience>
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
 					<dc:format>Digital</dc:format>
-					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dc:publisher xsi:type="dcterms:URI">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
 					<dcterms:accrualMethod>https://journals.dartmouth.edu/ljournal/submission.html</dcterms:accrualMethod>
 					<dcterms:accrualPeriodicity>http://rdaregistry.info/termList/frequency/1012</dcterms:accrualPeriodicity>
 					<dcterms:accrualPolicy>http://rdaregistry.info/termList/RDACollectionAccrualPolicy/1001</dcterms:accrualPolicy>
@@ -268,21 +268,21 @@
 					<dc:contributor xsi:type="marcrel:role" marcrel:code="pbd" xml:lang="en">Whaley, Lindsay J.</dc:contributor>
 					<dcterms:contributor xsi:type="marcrel:role" marcrel:code="pbd">https://lccn.loc.gov/n96083450</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Collection</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0004</dcterms:isPartOf>
-					<dc:subject xsi:type="dcterms:lcsh">Linguistics</dc:subject>
+					<dcterms:isPartOf xsi:type="dcterms:URI">oai:olac.dev:0004</dcterms:isPartOf>
+					<dc:subject xsi:type="dcterms:LCSH">Linguistics</dc:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="general_linguistics">general_linguistics</dc:subject>
 					<dc:title>Issue 2</dc:title>
 					<dc:language xsi:type="dcterms:RFC1766">en</dc:language>
 					<dc:description xsi:type="dcterms:tableOfContents">Origins of Apparent Violations of the "No Phrase" Constraint in Modern Georgian ; A New Passive in Kaqchikel ; Archiving Electronic Journals ; Vowel Harmony in Oroqen</dc:description>
 					<dc:publisher>Dartmouth College Library</dc:publisher>
 					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
-					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:URI">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
 					<dcterms:audience>Linguists</dcterms:audience>
 					<dcterms:audience>Language Scholars</dcterms:audience>
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
 					<dc:format>Digital</dc:format>
-					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dc:publisher xsi:type="dcterms:URI">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
 					<dcterms:accrualMethod>https://journals.dartmouth.edu/ljournal/submission.html</dcterms:accrualMethod>
 					<dcterms:accrualPeriodicity>http://rdaregistry.info/termList/frequency/1012</dcterms:accrualPeriodicity>
 					<dcterms:accrualPolicy>http://rdaregistry.info/termList/RDACollectionAccrualPolicy/1001</dcterms:accrualPolicy>
@@ -315,17 +315,17 @@
 					<dc:identifier>10.1349/PS1.1537-0852.A.1</dc:identifier>
 					<dc:identifier>doi:10.1349/PS1.1537-0852.A.1</dc:identifier>
 					<dcterms:biblographicCitation>Marlett, Stephen A. 2002. “Reanalysis of Passive and Negative Prefixes in Seri.” Linguistic Discovery 1 (1): 1–14. doi:10.1349/PS1.1537-0852.A.1.</dcterms:biblographicCitation>
-					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/article/1</dc:identifier>
-					<dc:description  xsi:type="dcterms:abstract">Two productive Seri prefixes, negative and passive, are in a limited number of cases reanalyzed as part of the verb stem. This reanalysis has produced homophonous verb forms: one group is clearly analytical (affix + root) and one group is clearly synthetic. The evidence that reanalysis has taken place is presented. These new verb roots enter into new morphological constructions. And since the original analytical verb forms continue to exist, the result is the coexistence of homophonous and sometimes virtually synonymous words (such as the original transitive verb and a new causative verb that is based on a reanalyzed passive).</dc:description>
+					<dcterms:identifier>https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/article/1</dcterms:identifier>
+					<dcterms:abstract>Two productive Seri prefixes, negative and passive, are in a limited number of cases reanalyzed as part of the verb stem. This reanalysis has produced homophonous verb forms: one group is clearly analytical (affix + root) and one group is clearly synthetic. The evidence that reanalysis has taken place is presented. These new verb roots enter into new morphological constructions. And since the original analytical verb forms continue to exist, the result is the coexistence of homophonous and sometimes virtually synonymous words (such as the original transitive verb and a new causative verb that is based on a reanalyzed passive).</dcterms:abstract>
 					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
 					<dc:contributor xsi:type="olac:role" olac:code="Author" xml:lang="en">Marlett, Stephen A.</dc:contributor>
 					<dcterms:contributor xsi:type="olac:role" olac:code="Author">https://lccn.loc.gov/no2003078023</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0004</dcterms:isPartOf>
-					<dc:subject xsi:type="dcterms:lcsh">Seri language</dc:subject>
-					<dc:subject xsi:type="dcterms:lcsh">Seri language--Passive voice</dc:subject>
-					<dc:subject xsi:type="dcterms:lcsh">Seri language--Verb</dc:subject>
-					<dcterms:subject xsi:type="dcterms:lcsh">http://id.loc.gov/authorities/subjects/sh85120224</dcterms:subject>
+					<dcterms:isPartOf xsi:type="dcterms:URI">oai:olac.dev:0004</dcterms:isPartOf>
+					<dc:subject xsi:type="dcterms:LCSH">Seri language</dc:subject>
+					<dc:subject xsi:type="dcterms:LCSH">Seri language--Passive voice</dc:subject>
+					<dc:subject xsi:type="dcterms:LCSH">Seri language--Verb</dc:subject>
+					<dcterms:subject xsi:type="dcterms:LCSH">http://id.loc.gov/authorities/subjects/sh85120224</dcterms:subject>
 					<dc:subject xsi:type="olac:language" olac:code="sei">Seri</dc:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="morphology">morphology</dc:subject>
 					<dc:title>Reanalysis of Passive and Negative Prefixes in Seri</dc:title>
@@ -333,13 +333,13 @@
 					<dc:description xsi:type="dcterms:tableOfContents">1. Introduction ; 2. Etymological Passives ; 3. Etymological Negatives ; 4. Is Reanalysis Gradual or Not?  How and Why Does It Happen? ; 5. Conclusion ; 6. References</dc:description>
 					<dc:publisher>Dartmouth College Library</dc:publisher>
 					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
-					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:URI">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
 					<dcterms:audience>Linguists</dcterms:audience>
 					<dcterms:audience>Language Scholars</dcterms:audience>
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
-					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
-					<dcterms:hasFormat xsi:type="dcterms:uri">oai:olac.dev:0007</dcterms:hasFormat>
+					<dc:publisher xsi:type="dcterms:URI">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:hasFormat xsi:type="dcterms:URI">oai:olac.dev:0007</dcterms:hasFormat>
 					<dc:format xsi:type="dcterms:IMT">text/html</dc:format>
 				</olac:olac>
 			</oai:metadata>
@@ -370,17 +370,17 @@
 					<dc:identifier>10.1349/PS1.1537-0852.A.1</dc:identifier>
 					<dc:identifier>doi:10.1349/PS1.1537-0852.A.1</dc:identifier>
 					<dcterms:biblographicCitation>Marlett, Stephen A. 2002. “Reanalysis of Passive and Negative Prefixes in Seri.” Linguistic Discovery 1 (1): 1–14. doi:10.1349/PS1.1537-0852.A.1.</dcterms:biblographicCitation>
-					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/document/261</dc:identifier>
-					<dc:description  xsi:type="dcterms:abstract">Two productive Seri prefixes, negative and passive, are in a limited number of cases reanalyzed as part of the verb stem. This reanalysis has produced homophonous verb forms: one group is clearly analytical (affix + root) and one group is clearly synthetic. The evidence that reanalysis has taken place is presented. These new verb roots enter into new morphological constructions. And since the original analytical verb forms continue to exist, the result is the coexistence of homophonous and sometimes virtually synonymous words (such as the original transitive verb and a new causative verb that is based on a reanalyzed passive).</dc:description>
+					<dcterms:identifier>https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/document/261</dcterms:identifier>
+					<dcterms:abstract>Two productive Seri prefixes, negative and passive, are in a limited number of cases reanalyzed as part of the verb stem. This reanalysis has produced homophonous verb forms: one group is clearly analytical (affix + root) and one group is clearly synthetic. The evidence that reanalysis has taken place is presented. These new verb roots enter into new morphological constructions. And since the original analytical verb forms continue to exist, the result is the coexistence of homophonous and sometimes virtually synonymous words (such as the original transitive verb and a new causative verb that is based on a reanalyzed passive).</dcterms:abstract>
 					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
 					<dc:contributor xsi:type="olac:role" olac:code="Author" xml:lang="en">Marlett, Stephen A.</dc:contributor>
 					<dcterms:contributor xsi:type="olac:role" olac:code="Author">https://lccn.loc.gov/no2003078023</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0004</dcterms:isPartOf>
-					<dc:subject xsi:type="dcterms:lcsh">Seri language</dc:subject>
-					<dc:subject xsi:type="dcterms:lcsh">Seri language--Passive voice</dc:subject>
-					<dc:subject xsi:type="dcterms:lcsh">Seri language--Verb</dc:subject>
-					<dcterms:subject xsi:type="dcterms:lcsh">http://id.loc.gov/authorities/subjects/sh85120224</dcterms:subject>
+					<dcterms:isPartOf xsi:type="dcterms:URI">oai:olac.dev:0004</dcterms:isPartOf>
+					<dc:subject xsi:type="dcterms:LCSH">Seri language</dc:subject>
+					<dc:subject xsi:type="dcterms:LCSH">Seri language--Passive voice</dc:subject>
+					<dc:subject xsi:type="dcterms:LCSH">Seri language--Verb</dc:subject>
+					<dcterms:subject xsi:type="dcterms:LCSH">http://id.loc.gov/authorities/subjects/sh85120224</dcterms:subject>
 					<dc:subject xsi:type="olac:language" olac:code="sei">Seri</dc:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="morphology">morphology</dc:subject>
 					<dc:title>Reanalysis of Passive and Negative Prefixes in Seri</dc:title>
@@ -388,13 +388,13 @@
 					<dc:description xsi:type="dcterms:tableOfContents">1. Introduction ; 2. Etymological Passives ; 3. Etymological Negatives ; 4. Is Reanalysis Gradual or Not?  How and Why Does It Happen? ; 5. Conclusion ; 6. References</dc:description>
 					<dc:publisher>Dartmouth College Library</dc:publisher>
 					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
-					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:URI">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
 					<dcterms:audience>Linguists</dcterms:audience>
 					<dcterms:audience>Language Scholars</dcterms:audience>
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
-					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
-					<dcterms:hasFormat xsi:type="dcterms:uri">oai:olac.dev:0006</dcterms:hasFormat>
+					<dc:publisher xsi:type="dcterms:URI">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:hasFormat xsi:type="dcterms:URI">oai:olac.dev:0006</dcterms:hasFormat>
 					<dc:format xsi:type="dcterms:IMT">application/pdf</dc:format>
 					<dcterms:extent>15 pages</dcterms:extent>
 				</olac:olac>
@@ -426,21 +426,21 @@
 					<dc:identifier>10.1349/PS1.1537-0852.A.61</dc:identifier>
 					<dc:identifier>doi:10.1349/PS1.1537-0852.A.61</dc:identifier>
 					<dcterms:biblographicCitation>Joseph, Brian D. 2002. “On Some Control Structures in Hellenistic Greek: A Comparison with Classical and Modern Greek.” Linguistic Discovery 1 (1): 15–32. doi:10.1349/PS1.1537-0852.A.61.</dcterms:biblographicCitation>
-					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/article/61</dc:identifier>
-					<dc:description  xsi:type="dcterms:abstract">Control Structures in Ancient Greek typically involved infinitival complementation while in Modern Greek, finite complementation is the rule. Hellenistic Greek provides an interesting "way-station" between these two types of complementation, inasmuch as it is both chronologically and structurally transitional. In this contribution to the historical syntax of Greek, an analysis is offered of control structures in Hellenistic Greek, tracing the transition from the Ancient Greek type to the Modern Greek type. Based on the evidence of these three stages of Greek and the developments that the language shows with regard to innovations in the form and properties of control structures, an argument is put forth in support of the view that control is not a purely syntactic phenomenon but rather derives from the lexical semantics of the predicates involved.</dc:description>
+					<dcterms:identifier>https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/article/61</dcterms:identifier>
+					<dcterms:abstract>Control Structures in Ancient Greek typically involved infinitival complementation while in Modern Greek, finite complementation is the rule. Hellenistic Greek provides an interesting "way-station" between these two types of complementation, inasmuch as it is both chronologically and structurally transitional. In this contribution to the historical syntax of Greek, an analysis is offered of control structures in Hellenistic Greek, tracing the transition from the Ancient Greek type to the Modern Greek type. Based on the evidence of these three stages of Greek and the developments that the language shows with regard to innovations in the form and properties of control structures, an argument is put forth in support of the view that control is not a purely syntactic phenomenon but rather derives from the lexical semantics of the predicates involved.</dcterms:abstract>
 					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
 					<dc:contributor xsi:type="olac:role" olac:code="Author" xml:lang="en">Joseph, Brian D.</dc:contributor>
 					<dcterms:contributor xsi:type="olac:role" olac:code="Author">https://lccn.loc.gov/n83013785</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0004</dcterms:isPartOf>
+					<dcterms:isPartOf xsi:type="dcterms:URI">oai:olac.dev:0004</dcterms:isPartOf>
 					<dc:subject xsi:type="olac:language" olac:code="grk">Greek Languages</dc:subject>
 					<dc:subject xsi:type="olac:language" olac:code="gre">Modern Greek</dc:subject>
 					<dc:subject xsi:type="olac:language" olac:code="ell">Modern Greek</dc:subject>
 					<dc:subject xsi:type="olac:language" olac:code="grc">Ancient Greek</dc:subject>
-					<dc:subject xsi:type="dcterms:lcsh">Greek language, Hellenistic (300 B.C.-600 A.D.)--Syntax</dc:subject>
-					<dc:subject xsi:type="dcterms:lcsh">Greek language, Modern--Syntax</dc:subject>
-					<dcterms:subject xsi:type="dcterms:lcsh">http://id.loc.gov/authorities/subjects/sh85057166</dcterms:subject>
-					<dcterms:subject xsi:type="dcterms:lcsh">http://id.loc.gov/authorities/subjects/sh85057164</dcterms:subject>
+					<dc:subject xsi:type="dcterms:LCSH">Greek language, Hellenistic (300 B.C.-600 A.D.)--Syntax</dc:subject>
+					<dc:subject xsi:type="dcterms:LCSH">Greek language, Modern--Syntax</dc:subject>
+					<dcterms:subject xsi:type="dcterms:LCSH">http://id.loc.gov/authorities/subjects/sh85057166</dcterms:subject>
+					<dcterms:subject xsi:type="dcterms:LCSH">http://id.loc.gov/authorities/subjects/sh85057164</dcterms:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="syntax">syntax</dc:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="historical_linguistics">historical_linguistics</dc:subject>
 					<dc:title>On Some Control Structures in Hellenistic Greek: A Comparison with Classical and Modern Greek</dc:title>
@@ -448,13 +448,13 @@
 					<dc:description xsi:type="dcterms:tableOfContents">1. Introduction ; 2. Control Structures in Hellenistic Greek ; 3. PRO or pro in Greek Control Structures? ; 4. Conclusion — Diachronic Syntax and Control ; 5. References</dc:description>
 					<dc:publisher>Dartmouth College Library</dc:publisher>
 					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
-					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:URI">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
 					<dcterms:audience>Linguists</dcterms:audience>
 					<dcterms:audience>Language Scholars</dcterms:audience>
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
-					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
-					<dcterms:hasFormat xsi:type="dcterms:uri">oai:olac.dev:0009</dcterms:hasFormat>
+					<dc:publisher xsi:type="dcterms:URI">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:hasFormat xsi:type="dcterms:URI">oai:olac.dev:0009</dcterms:hasFormat>
 					<dc:format xsi:type="dcterms:IMT">text/html</dc:format>
 				</olac:olac>
 			</oai:metadata>
@@ -485,21 +485,21 @@
 					<dc:identifier>10.1349/PS1.1537-0852.A.61</dc:identifier>
 					<dc:identifier>doi:10.1349/PS1.1537-0852.A.61</dc:identifier>
 					<dcterms:biblographicCitation>Joseph, Brian D. 2002. “On Some Control Structures in Hellenistic Greek: A Comparison with Classical and Modern Greek.” Linguistic Discovery 1 (1): 15–32. doi:10.1349/PS1.1537-0852.A.61.</dcterms:biblographicCitation>
-					<dc:identifier xsi:type="dcterms:uri">https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/document/241</dc:identifier>
-					<dc:description  xsi:type="dcterms:abstract">Control Structures in Ancient Greek typically involved infinitival complementation while in Modern Greek, finite complementation is the rule. Hellenistic Greek provides an interesting "way-station" between these two types of complementation, inasmuch as it is both chronologically and structurally transitional. In this contribution to the historical syntax of Greek, an analysis is offered of control structures in Hellenistic Greek, tracing the transition from the Ancient Greek type to the Modern Greek type. Based on the evidence of these three stages of Greek and the developments that the language shows with regard to innovations in the form and properties of control structures, an argument is put forth in support of the view that control is not a purely syntactic phenomenon but rather derives from the lexical semantics of the predicates involved.</dc:description>
+					<dcterms:identifier>https://journals.dartmouth.edu/cgi-bin/WebObjects/Journals.woa/xmlpage/1/document/241</dcterms:identifier>
+					<dcterms:abstract>Control Structures in Ancient Greek typically involved infinitival complementation while in Modern Greek, finite complementation is the rule. Hellenistic Greek provides an interesting "way-station" between these two types of complementation, inasmuch as it is both chronologically and structurally transitional. In this contribution to the historical syntax of Greek, an analysis is offered of control structures in Hellenistic Greek, tracing the transition from the Ancient Greek type to the Modern Greek type. Based on the evidence of these three stages of Greek and the developments that the language shows with regard to innovations in the form and properties of control structures, an argument is put forth in support of the view that control is not a purely syntactic phenomenon but rather derives from the lexical semantics of the predicates involved.</dcterms:abstract>
 					<dcterms:issued xsi:type="dcterms:W3CDTF">2002</dcterms:issued>
 					<dc:contributor xsi:type="olac:role" olac:code="Author" xml:lang="en">Joseph, Brian D.</dc:contributor>
 					<dcterms:contributor xsi:type="olac:role" olac:code="Author">https://lccn.loc.gov/n83013785</dcterms:contributor>
 					<dc:type xsi:type="dcterms:DCMIType">Text</dc:type>
-					<dcterms:isPartOf xsi:type="dcterms:uri">oai:olac.dev:0004</dcterms:isPartOf>
+					<dcterms:isPartOf xsi:type="dcterms:URI">oai:olac.dev:0004</dcterms:isPartOf>
 					<dc:subject xsi:type="olac:language" olac:code="grk">Greek Languages</dc:subject>
 					<dc:subject xsi:type="olac:language" olac:code="gre">Modern Greek</dc:subject>
 					<dc:subject xsi:type="olac:language" olac:code="ell">Modern Greek</dc:subject>
 					<dc:subject xsi:type="olac:language" olac:code="grc">Ancient Greek</dc:subject>
-					<dc:subject xsi:type="dcterms:lcsh">Greek language, Hellenistic (300 B.C.-600 A.D.)--Syntax</dc:subject>
-					<dc:subject xsi:type="dcterms:lcsh">Greek language, Modern--Syntax</dc:subject>
-					<dcterms:subject xsi:type="dcterms:lcsh">http://id.loc.gov/authorities/subjects/sh85057166</dcterms:subject>
-					<dcterms:subject xsi:type="dcterms:lcsh">http://id.loc.gov/authorities/subjects/sh85057164</dcterms:subject>
+					<dc:subject xsi:type="dcterms:LCSH">Greek language, Hellenistic (300 B.C.-600 A.D.)--Syntax</dc:subject>
+					<dc:subject xsi:type="dcterms:LCSH">Greek language, Modern--Syntax</dc:subject>
+					<dcterms:subject xsi:type="dcterms:LCSH">http://id.loc.gov/authorities/subjects/sh85057166</dcterms:subject>
+					<dcterms:subject xsi:type="dcterms:LCSH">http://id.loc.gov/authorities/subjects/sh85057164</dcterms:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="syntax">syntax</dc:subject>
 					<dc:subject xsi:type="olac:linguistic-field" olac:code="historical_linguistics">historical_linguistics</dc:subject>
 					<dc:title>On Some Control Structures in Hellenistic Greek: A Comparison with Classical and Modern Greek</dc:title>
@@ -507,13 +507,13 @@
 					<dc:description xsi:type="dcterms:tableOfContents">1. Introduction ; 2. Control Structures in Hellenistic Greek ; 3. PRO or pro in Greek Control Structures? ; 4. Conclusion — Diachronic Syntax and Control ; 5. References</dc:description>
 					<dc:publisher>Dartmouth College Library</dc:publisher>
 					<dcterms:rightsHolder>Dartmouth College Library</dcterms:rightsHolder>
-					<dcterms:rightsHolder xsi:type="dcterms:uri">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
+					<dcterms:rightsHolder xsi:type="dcterms:URI">https://lccn.loc.gov/n82269988</dcterms:rightsHolder>
 					<dcterms:audience>Linguists</dcterms:audience>
 					<dcterms:audience>Language Scholars</dcterms:audience>
 					<dcterms:accessRights>Public Access</dcterms:accessRights>
 					<dcterms:license xml:lang="en">Implied License</dcterms:license>
-					<dc:publisher xsi:type="dcterms:uri">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
-					<dcterms:hasFormat xsi:type="dcterms:uri">oai:olac.dev:0008</dcterms:hasFormat>
+					<dc:publisher xsi:type="dcterms:URI">https://www.dartmouth.edu/library/digital/publishing/journals/index.html</dc:publisher>
+					<dcterms:hasFormat xsi:type="dcterms:URI">oai:olac.dev:0008</dcterms:hasFormat>
 					<dc:format xsi:type="dcterms:IMT">application/pdf</dc:format>
 					<dcterms:extent>18 pages</dcterms:extent>
 				</olac:olac>
